@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import './css/font-awesome.min.css';
 import './css/themify-icons.css';
 import './css/flaticon.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,10 +1,30 @@
 .wpo-counter-area,
 .wpo-counter-style-2 {
-    padding: 100px 0;
-    background: url('../../images/counter/img-1.png') no-repeat center center / cover;
+    padding: 50px 0;
+    /* background: url('../../images/counter/img-1.png') no-repeat center center / cover; */
     position: relative;
 }
-
+.wpo-counter-area{
+margin-top: 100px;
+}
+.wpo-counter-area .grid div{
+    text-align: left;
+}
+.wpo-counter-area .grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wpo-counter-area .grid i{
+    font-size: 30px;
+    color: #fff;
+    background-color: #91278f;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .wpo-counter-area:before,
 .wpo-counter-style-2:before {
     position: absolute;
@@ -33,7 +53,7 @@
     top: 15px;
     right: 0;
     width: 1px;
-    height: 70px;
+    height: 100px;
     background: #636363;
 }
 

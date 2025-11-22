@@ -20,12 +20,30 @@
 .wpo-about-img-2 img {
     width: 100%;
 }
-
+.wpo-about-area .row{
+align-items: center;
+}
 .wpo-about-img-3 {
-    width: 165%;
+    /* width: 165%; */
     position: relative;
-    right: -34px;
-    top: -25px;
+    /* right: -34px;
+    top: -25px; */
+
+}
+.wpo-about-text.text-right{
+    text-align: right;
+}
+.wpo-about-text.text-right .wpo-section-title{
+    text-align: right;
+}
+.wpo-about-text.text-right .btns{
+  float: right;
+}
+.wpo-about-img-3 .img{
+    float: right;
+}
+.wpo-about-img-3 .imggg{
+    float: right;
 }
 
 @media(max-width: 1200px) {
