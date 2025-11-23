@@ -12,6 +12,7 @@ import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 import CounterSection from '../../components/counter'
+import Howworks from '../../components/howworks'
 
 
 const HomePage3 =() => {
@@ -23,6 +24,7 @@ const HomePage3 =() => {
           
             <About/>
               <Mission subclass={'section-padding'}/>
+              <Howworks/>
             <CaseSlide/>
           
             <TeamSection/>

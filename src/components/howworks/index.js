@@ -1,0 +1,47 @@
+import React from 'react'
+import ms1 from '../../images/mission/icon1.png'
+import ms5 from '../../images/icons/how-it-works.png'
+import './style.css'
+
+const Mission = (props) => {
+    return(
+        <div className={`wpo-mission-area ${props.subclass}`}>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="wpo-section-title">
+                            <span>How it works</span>
+                            <h2>Children Are elevated  beyond survival</h2>
+                            <p> where they may flourish and have a chance to live with dignity and purpose.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="wpo-mission-wrap">
+                    <div className="row justify-content-center">
+                       
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 custom-grid">
+                            <div className="wpo-mission-item p-0">
+                                <div className="wpo-mission-icon-5">
+                                    <img src={ms5} alt=""/>
+                                </div>
+                           
+                            </div>
+                        </div>
+                       
+                      
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-12 custom-grid">
+                            <div className="wpo-mission-item text-center">
+                               
+                                <div className="wpo-mission-content">
+                                    <p>With the core principle of Maslow’s law of hierarchy, we diligently work towards connecting children in need partners with resources. All the donations, medical and educational resources obtained from sponsors, volunteers are catered to the unique needs of children. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Mission;

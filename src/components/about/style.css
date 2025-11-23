@@ -5,7 +5,34 @@
     margin: unset;
     margin-bottom: 35px;
 }
+.wpo-about-area{
+     position: relative;
+}
+.wpo-about-area .icon-left, .wpo-about-area .icon-right{
+    position: absolute;
+   
+}
 
+.wpo-about-area .icon-left{
+    top:-4%;
+left: 0;
+}
+.wpo-about-area .icon-right{
+     top:-10%;
+right: 0;
+}
+@media(max-width:992px){
+    .wpo-about-area .icon-left{
+    top:-2%;
+left: 0;
+width:150px;
+}
+.wpo-about-area .icon-right{
+     top:-4%;
+right: 0;
+width:400px;
+}
+}
 .wpo-about-text p,
 .wpo-about-text-2 p {
     margin-bottom: 35px;

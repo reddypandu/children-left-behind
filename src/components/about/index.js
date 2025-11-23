@@ -3,6 +3,8 @@ import abimg from '../../images/about1.png'
 import abimgg from '../../images/about4.png'
 import abimggg from '../../images/about5.png'
 import VideoModal from '../ModalVideo'
+import ms6 from '../../images/icons/2.png'
+import ms7 from '../../images/icons/1.png'
 import './style.css'
 
 const About = (props) => {
@@ -10,8 +12,14 @@ const About = (props) => {
         window.scrollTo(10, 0);
      }
     return(
-        <div className="wpo-about-area section-padding">
+        <div className="wpo-about-area icons section-padding">
+            
+                 <img src={ms6} alt="" className='icon-left'/>
+                    <img src={ms7} alt="" className='icon-right'/>
+                   
+             
             <div className="container">
+                
                 <div className="row pb-4">
                     <div className="col-12">
                           <div className="wpo-section-title">
