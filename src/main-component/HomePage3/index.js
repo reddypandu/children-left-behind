@@ -20,8 +20,9 @@ const HomePage3 =() => {
             <Header/>
             <Hero3/>
              <CounterSection/>
-            <Mission subclass={'section-padding'}/>
+          
             <About/>
+              <Mission subclass={'section-padding'}/>
             <CaseSlide/>
           
             <TeamSection/>

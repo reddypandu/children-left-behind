@@ -21,7 +21,7 @@
 }
 
 .wpo-mission-item p {
-    max-width: 250px;
+    /* max-width: 250px; */
     margin: auto;
 }
 
@@ -69,11 +69,11 @@
 .wpo-mission-icon-6,
 .wpo-mission-icon-7,
 .wpo-mission-icon-8 {
-    font-size: 45px;
+    /* font-size: 45px;
     width: 70px;
     height: 70px;
     line-height: 65px;
-    background: #91278f;
+    background: #91278f; */
     border-radius: 50%;
     margin: auto;
 }
