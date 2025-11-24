@@ -1,0 +1,16 @@
+.about-section-2 .wpo-mission-content{
+   flex: 1;
+    border: 2px solid #ebebeb;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 150px; /* same height for all */
+}
+.about-section-2 .wpo-mission-content p{
+      /* display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+}
