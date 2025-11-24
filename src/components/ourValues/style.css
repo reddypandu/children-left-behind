@@ -1,0 +1,43 @@
+.values-section {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.values-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #b66ed6;
+    margin-bottom: 20px;
+}
+
+.values-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.values-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Background graphic row */
+.values-section .values-bg {
+    position: absolute;
+
+ left: 5%;
+bottom: -45%;
+}
+@media(max-width:992px){
+    .values-section .values-bg {
+    
+     left: 5%;
+    bottom: -5%;
+    }
+}
+.values-bg img {
+    width: 100%;
+}
