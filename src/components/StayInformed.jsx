@@ -131,17 +131,17 @@ function StayInformed() {
                         <li>46% of children under 5 are malnourished.</li> <br></br>
                         <li>India has 17 million child laborers—the highest in the world.</li> <br></br>
 
-                         <li>  Under the age group of 5-14 years, 4.02% of children engaged in economic activities.</li> <br></br>
+                        <li>  Under the age group of 5-14 years, 4.02% of children engaged in economic activities.</li> <br></br>
                         <li>                        Total of 6.75% children at work, of which 4.73% are boys and 8.93% are girls.</li> <br></br>
                         <li>                        Sex Ratio under 15 years: 1.06 male(s)/female.</li> <br></br>
                         <li> Sex Ratio under 15 years: 1.06 male(s)/female.</li> <br></br>
-                         <li>   Infant mortality rate: 57.92</li> <br></br>
+                        <li>   Infant mortality rate: 57.92</li> <br></br>
                         <li>     Children Underweight Rate: 18%</li> <br></br>
                         <li>Life expectancy at birth > male: 63.9 years.</li> <br></br>
                         <li>Life expectancy at birth > female: 63 years</li> <br></br>
 
 
-                   
+
 
                     </ul>
                 </main>

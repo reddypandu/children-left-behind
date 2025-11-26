@@ -2,8 +2,20 @@ import React from "react";
 import heroImg from "../images/icons/gc.png";
 import Header from "../components/header";
 // import "../css";
+import { useState, useEffect } from "react";
 import "../App"
 function Cards() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
         <>
             {/* 🌟 HERO SECTION */}
@@ -16,53 +28,44 @@ function Cards() {
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-                    <h2 style={{ textAlign: 'center' }} className="title">Community and Rural Development Society (CARDS)</h2>
-
-
-
-
-
 
                     <div className="p-6 space-y-6 leading-relaxed text-gray-800">
                         {/* Project 1 */}
                         <div>
-                            <p className="text-xl font-bold mb-2">
+                            <h2 className="text-xl font-bold mb-2">
                                 Our Vision
-                            </p>
+                            </h2> <br></br>
                             <p>
                                 CARDS envisions an India where Dalit communities are fully integrated into society equal in law, status, opportunity, and dignity. We aspire to build a nation where every Dalit individual is indistinguishable from other citizens, free from barriers of caste, discrimination, or socio-economic exclusion. Our vision is a just and inclusive society where every Dalit can live, work, and grow with pride, respect, and equal rights.
                             </p>
-                        </div>
+                        </div><br></br>
 
                         {/* Project 2 */}
                         <div>
-                            <p className="text-xl font-bold mb-2">
+                            <h2 className="text-xl font-bold mb-2">
                                 Our Mission
-                            </p>
+                            </h2> <br></br>
                             <p>
                                 Our mission is to eliminate every form of discrimination, oppression, and inequality faced by Dalit communities both legally and socially. CARDS is committed to ensuring that Dalits across India receive the same rights, protections, and privileges as every other citizen. We work to empower Dalits with knowledge, opportunities, and resources that support their holistic development, freedom, and participation in nation-building
                             </p>
-                        </div>
+                        </div> <br></br>
                         {/* Project 3 */}
                         <div>
-                            <p className="text-xl font-bold mb-2">
+                            <h2 className="text-xl font-bold mb-2">
                                 Our Purpose
-                            </p>
+                            </h2> <br></br>
                             <p>
-                                CARDS exists to empower Dalit communities through education, awareness, equal opportunities, social justice, and community-driven development. Our purpose is rooted in the belief that every Dalit individual <br></br>deserves:<br></br> Freedom from discrimination <br></br>
-                                Equal access to opportunities <br></br>
-                                Dignity and respect <r></r>
-                                A voice in democratic processes <br></br>
-                                A future built on empowerment, not oppression <br></br>
-                                We work to dismantle structural barriers and create pathways for Dalit communities to thrive socially, economically, culturally, and politically.
+                                Our Purpose is to fight for Dalits who deserves: Freedom from discrimination, Equal access to opportunities’ Dignity and respect,, and A voice in democratic processes with a future built on empowerment, not oppression <br></br>
+                                <br></br>
+                                We work to dismantle structural barriers and create pathways for Dalit communities to thrive socially, economically, culturally, and politically
                             </p>
-                        </div>
+                        </div> <br></br>
 
 
                         <h3 className="sub-title">Projects</h3>
 
                         <ul className="project-list">
-                              <p className="text-xl font-bold">
+                            <p className="text-xl font-bold">
                                 Current Projects
                             </p>
                             <li>Education Center for Rural Development</li>

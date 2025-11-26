@@ -92,3 +92,11 @@
 }
 
 
+.project-list {
+  list-style-type: disc !important;
+  padding-left: 20px !important;
+}
+
+.project-list li {
+  list-style-type: disc !important;
+}
