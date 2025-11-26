@@ -1,0 +1,9 @@
+.head {
+    color: #b66ed6;
+    font-weight: 600;
+}
+
+div.what {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Header from '../../components/header'
 import PageTitle from '../../components/pagetitle'
 import VedioCta from '../../components/vediocta'
@@ -11,23 +11,26 @@ import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 import AboutHero from '../../components/aboutHero'
 import AboutMission from '../../components/aboutMission'
-import OurValues from '../../components/ourValues'
+import OurMission from '../../components/ourMission'
+import ValuesSection from '../../components/ourValuess'
+import WhatWeDo from '../../components/whatWeDo'
+import LeaderShip from '../../components/LeaderShip'
 
 
-const CasePage =() => {
-    return(
+const CasePage = () => {
+    return (
         <Fragment>
-            <Header/>
+            <Header />
             {/* <PageTitle pageTitle={'About Us'} pagesub={'About'}/>  */}
             {/* <VedioCta/> */}
-            <AboutHero/>
-            <AboutMission subclass={'section-padding'}/>
-            <OurValues/>
-            <CaseSlide/>
-            <CounterSection/>
-            <TeamSection/>
-            <Footer/>
-            <Scrollbar/>
+            <AboutHero />
+            <AboutMission subclass={'section-padding'} />
+            <OurMission />
+            <ValuesSection />
+            <WhatWeDo />
+            <LeaderShip />
+            <Footer />
+            <Scrollbar />
         </Fragment>
     )
 };

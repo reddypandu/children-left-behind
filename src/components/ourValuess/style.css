@@ -1,0 +1,34 @@
+.value-number {
+    width: 32px;
+    height: 32px;
+    padding: 8px 16px;
+    background: #b76ed67a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.values {
+    padding-top: 14rem !important;
+}
+
+.values .title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #b66ed6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.right-values .d-flex {
+    margin-top: 4rem;
+}
+
+@media(max-width:992px) {
+    .values {
+        padding-top: 3rem !important;
+    }
+
+}
