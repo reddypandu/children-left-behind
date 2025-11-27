@@ -12,9 +12,12 @@ const Footer = (props) =>{
         window.scrollTo(10, 0);
      }
 
+    const SubmitHandler = (e) => {
+      e.preventDefault()
+    }
   return(
-    <footer className="wpo-site-footer">
-        <Newsletter/>
+    <footer className="wpo-site-footer pt-5">
+        {/* <Newsletter/> */}
         <div className="wpo-upper-footer">
             <div className="container">
                 <div className="row">
@@ -64,21 +67,20 @@ const Footer = (props) =>{
                             </ul>
                         </div>
                     </div>
-                    <div className="col col-lg-3 offset-lg-1 col-md-6 col-sm-12 col-12">
-                        <div className="widget market-widget wpo-service-link-widget">
-                            <div className="widget-title">
-                                <h3>Contact </h3>
-                            </div>
-                            <p>online store with lots of cool and exclusive wpo-features</p>
-                            <div className="contact-ft">
-                                <ul>
-                                    <li><i className="fi flaticon-pin"></i>28 Street, New York City, USA</li>
-                                    <li><i className="fi flaticon-call"></i>+000123456789</li>
-                                    <li><i className="fi flaticon-envelope"></i>nasarna@gmail.com</li>
-                                </ul>
+                    <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
+                       <div className="wpo-newsletter">
+                            <p>Get the latest updates about ChildrenLeftBehind’s new  updates and programs.</p>
+                            <div className="wpo-newsletter-form">
+                                <form onSubmit={SubmitHandler}>
+                                    <div>
+                                        <input type="text" placeholder="Enter Your Email" className="form-control"/>
+                                        <button type="submit">Subscribe</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+                     
                 </div>
             </div>
         </div>

@@ -15,6 +15,11 @@ import OurMission from '../../components/ourMission'
 import ValuesSection from '../../components/ourValuess'
 import WhatWeDo from '../../components/whatWeDo'
 import LeaderShip from '../../components/LeaderShip'
+import Howworks from '../../components/howworks'
+import BlogSection from '../../components/BlogSection'
+import Needs from '../../components/needs'
+import CtaSection from '../../components/cta'
+import TiltCarousel from '../../components/TiltCarousel';
 
 
 const CasePage = () => {
@@ -24,11 +29,18 @@ const CasePage = () => {
             {/* <PageTitle pageTitle={'About Us'} pagesub={'About'}/>  */}
             {/* <VedioCta/> */}
             <AboutHero />
+            <WhatWeDo />
+            <CounterSection/>
+            <TiltCarousel/>
             <AboutMission subclass={'section-padding'} />
             <OurMission />
-            <ValuesSection />
-            <WhatWeDo />
             <LeaderShip />
+            <ValuesSection />
+             <Howworks/>
+             <Mission subclass={'section-padding'}/>
+             <BlogSection/>
+<CtaSection ctaclass={'wpo-cta-area-2'}/>
+              <Needs/>
             <Footer />
             <Scrollbar />
         </Fragment>

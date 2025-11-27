@@ -1,0 +1,44 @@
+.tilt-wrapper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.tilt-card {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tilt-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+/* SAME ROTATION AS YOUR SAMPLE */
+.rotate-1 img {
+  transform: rotate(-6deg);
+}
+.rotate-2 img {
+  transform: rotate(3deg);
+}
+.rotate-3 img {
+  transform: rotate(-5deg);
+}
+.rotate-4 img {
+  transform: rotate(5deg);
+}
+/* SPACE BETWEEN SLIDES */
+.tilt-wrapper .slick-slide {
+  margin: 0 12px;   /* Adjust space as you like (left+right) */
+}
+
+/* Fix slick overflow cutting */
+.tilt-wrapper .slick-list {
+  margin: 0 -12px;
+}

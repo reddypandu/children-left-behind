@@ -1,12 +1,12 @@
 import React from "react";
-import Team1 from "../../images/team/team-1.jpg";
-import Team2 from "../../images/team/team-2.jpg";
-import Team3 from "../../images/team/team-3.jpg";
+import Team1 from "../../images/team/team-1.png";
+import Team2 from "../../images/team/team-2.png";
+import Team3 from "../../images/team/team-3.png";
 import "./style.css";
 
 const TeamSection = () => {
     return (
-        <div className="container py-5">
+        <div className="container py-5 leader">
             {/* Section Title */}
             <div className="text-center mb-5">
                 <p className="text-uppercase small fw-bold purplee">Who We Are</p>
