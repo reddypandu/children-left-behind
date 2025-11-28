@@ -2,17 +2,12 @@ import React from "react";
 import heroImg from "../images/icons/gc.png";
 import Header from "./header";
 import heroDesktop from "../images/icons/partners-desk.png";
-<<<<<<< HEAD
 import heroMobile from "../images/icons/partners-m.png"; 
 import { useState,useEffect } from "react";
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
 import Needs from "../components/needs";
-=======
-import heroMobile from "../images/icons/partners-m.png";
-import { useState, useEffect } from "react";
->>>>>>> 65226115d7cd1327da4fc486327d2b30be2061ad
 // import "../css";
 import "../App"
 function ChildCenter() {
