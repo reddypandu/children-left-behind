@@ -4,6 +4,10 @@ import Header from "./header";
 import heroDesktop from "../images/icons/partners-desk.png";
 import heroMobile from "../images/icons/partners-m.png"; 
 import { useState,useEffect } from "react";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 // import "../css";
 import "../App"
 function ChildCenter() {
@@ -272,8 +276,14 @@ function ChildCenter() {
                             </p>
                         </div>
                     </div>
+                  
                 </div>
+                 
             </section>
+               <BlogSection />
+                    <CtaSection ctaclass={'wpo-cta-area-2'} />
+                    <Needs />
+                    <Footer />
         </>
     );
 }

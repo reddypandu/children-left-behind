@@ -4,6 +4,10 @@ import Header from "../components/header";
 import heroDesktop from "../images/icons/asha.png";
 import heroMobile from "../images/icons/asha-m.png"; 
 import { useState, useEffect } from "react";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 // import "../css";
 import "../App"
 function Ashajyothi() {
@@ -86,6 +90,10 @@ function Ashajyothi() {
                     </div>
                 </div>
             </section>
+               <BlogSection />
+                    <CtaSection ctaclass={'wpo-cta-area-2'} />
+                    <Needs />
+                    <Footer />
         </>
     );
 }

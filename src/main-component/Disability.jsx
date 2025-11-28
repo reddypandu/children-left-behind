@@ -4,6 +4,10 @@ import Header from "../components/header";
 // import "../css";
 import "../App"
 import img from "../images/icons/Frame 232.png"
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 function Disability() {
     return (
         <>
@@ -19,7 +23,7 @@ function Disability() {
                     width: "100%",
                     overflowX: "auto",
                     whiteSpace: "nowrap",
-                    paddingLeft:'30px'
+                    paddingLeft: '30px'
                 }}
             >
                 <div
@@ -31,8 +35,9 @@ function Disability() {
                     }}
                 >
                     <span
-                        style={{ color: "#444", cursor: "pointer", whiteSpace: "nowrap"
-                            
+                        style={{
+                            color: "#444", cursor: "pointer", whiteSpace: "nowrap"
+
                         }}
                     >
                         Education
@@ -42,12 +47,14 @@ function Disability() {
                         Medical campaigns
                     </span>
 
-                    <span style={{backgroundColor: "#F2E5FF",
-                            color: "#7A3CFF",
-                            padding: "6px ",
-                            borderRadius: "20px",
-                            cursor: "pointer",
-                            whiteSpace: "nowrap" }}>
+                    <span style={{
+                        backgroundColor: "#F2E5FF",
+                        color: "#7A3CFF",
+                        padding: "6px ",
+                        borderRadius: "20px",
+                        cursor: "pointer",
+                        whiteSpace: "nowrap"
+                    }}>
                         Supporting the disabled
                     </span>
 
@@ -58,11 +65,11 @@ function Disability() {
                     <span style={{ color: "#444", cursor: "pointer", whiteSpace: "nowrap" }}>
                         Act for child protection
                     </span>
-                    
+
                     <span style={{ color: "#444", cursor: "pointer", whiteSpace: "nowrap" }}>
                         Nurturing playtime
                     </span>
-                    
+
                     <span style={{ color: "#444", cursor: "pointer", whiteSpace: "nowrap" }}>
                         Disaster relief
                     </span>
@@ -253,9 +260,12 @@ function Disability() {
                         Contact us if you are interested in volunteering to help be a part of our Medical Outreach program.<br></br><br></br>
 
                     </p> */}
-
-
                 </div>
+
+                <BlogSection />
+                <CtaSection ctaclass={'wpo-cta-area-2'} />
+                <Needs />
+                <Footer />
             </section>
         </>
     );

@@ -4,6 +4,10 @@ import Header from "../components/header";
 import heroDesktop from "../images/icons/pavani.png";
 import heroMobile from "../images/icons/pavani-m.png";
 import { useState, useEffect } from "react";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 // import "../css";
 import "../App"
 function Pavani() {
@@ -138,6 +142,10 @@ function Pavani() {
                     </div>
                 </div>
             </section>
+               <BlogSection />
+                                <CtaSection ctaclass={'wpo-cta-area-2'} />
+                                <Needs />
+                                <Footer />
 
            
         </>

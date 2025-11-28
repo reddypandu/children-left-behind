@@ -4,6 +4,10 @@ import heroMobile from "../images/icons/m-contact.png";
 import Header from "./header";
 import img from "../images/icons/Frame 232.png";
 import "../App";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 function ContactUs() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -107,6 +111,10 @@ function ContactUs() {
 
       </div>
     </section>
+       <BlogSection />
+                    <CtaSection ctaclass={'wpo-cta-area-2'} />
+                    <Needs />
+                    <Footer />
     
 
      

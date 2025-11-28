@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import heroImg from "../images/icons/stat-informed.png";
 import Header from "../components/header";
 import "../App";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 
 function StayInformed() {
 
@@ -138,6 +142,10 @@ function StayInformed() {
                 </main>
 
             </div>
+               <BlogSection />
+                    <CtaSection ctaclass={'wpo-cta-area-2'} />
+                    <Needs />
+                    <Footer />
 
         </>
     );

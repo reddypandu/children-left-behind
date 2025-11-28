@@ -2,37 +2,41 @@ import React from "react";
 import heroImg from "../images/icons/gc.png";
 import Header from "../components/header";
 import heroDesktop from "../images/icons/cards.png";
-import heroMobile from "../images/icons/cards-m.png"; 
+import heroMobile from "../images/icons/cards-m.png";
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 // import "../css";
 import { useState, useEffect } from "react";
 import "../App"
 function Cards() {
-      const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth <= 768);
-    checkScreen();
+    useEffect(() => {
+        const checkScreen = () => setIsMobile(window.innerWidth <= 768);
+        checkScreen();
 
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
-  }, []);
+        window.addEventListener("resize", checkScreen);
+        return () => window.removeEventListener("resize", checkScreen);
+    }, []);
     return (
         <>
             {/* 🌟 HERO SECTION */}
-                 <section className="hero-section" style={{ position: "relative" }}>
-        <Header />
+            <section className="hero-section" style={{ position: "relative" }}>
+                <Header />
 
-        {/* Only ONE image will show based on screen size */}
-        <img
-          src={isMobile ? heroMobile : heroDesktop}
-          alt="Hero"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-          }}
-        />
-      </section>
+                {/* Only ONE image will show based on screen size */}
+                <img
+                    src={isMobile ? heroMobile : heroDesktop}
+                    alt="Hero"
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        display: "block",
+                    }}
+                />
+            </section>
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
@@ -112,6 +116,10 @@ function Cards() {
                     </div>
                 </div>
             </section>
+            <BlogSection />
+            <CtaSection ctaclass={'wpo-cta-area-2'} />
+            <Needs />
+            <Footer />
         </>
     );
 }

@@ -4,6 +4,10 @@ import Header from "../components/header";
 // import "../css";
 import "../App"
 import img from "../images/icons/Frame 232.png"
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 function DisasterRelief() {
     return (
         <>
@@ -180,13 +184,12 @@ function DisasterRelief() {
                     <p className="description">
                         Please support the people affected by the floods, for our partners as they work in this remote rural areas in India.
                     </p><br></br>
-
-
-
-
-
                     <img style={{ width: '100%' }} src={img} />
                 </div> <br></br>
+                  <BlogSection />
+                    <CtaSection ctaclass={'wpo-cta-area-2'} />
+                    <Needs />
+                    <Footer />
             </section>
         </>
     );

@@ -4,6 +4,10 @@ import Header from "../components/header";
 // import "../css";
 import "../App"
 import img from "../images/icons/Frame 232.png"
+import Footer from "../components/footer";
+import BlogSection from "../components/BlogSection"
+import CtaSection from "../components/cta";
+import Needs from "../components/needs";
 function Disability() {
     return (
         <>
@@ -89,11 +93,14 @@ function Disability() {
                         We are seeing how the promise and hope for a better future through education is becoming a reality as we work with at-risk children in the United States and developing world nations. We believe in the value of education to “open doors” for a new way of life for children and youth all around the globe.<br></br><br></br>
                         Every day men, women, and children are trafficked for sex, or forced into labor and/or begging worldwide. Their hearts are crying out for rescue from poverty, abuse and bondage. Children Left Behind is committed to respond to their cry and be an advocate for this very real need. You too, can be a part of the transformation that education provides in a child’s life by giving them a fresh start and a confident hope for a better future! Join us in being a part of the solution
                     </p>
-
-
-
                     <img style={{ width: '100%' }} src={img} />
+
+
                 </div> <br></br>
+                <BlogSection />
+                <CtaSection ctaclass={'wpo-cta-area-2'} />
+                <Needs />
+                <Footer />
             </section>
         </>
     );
