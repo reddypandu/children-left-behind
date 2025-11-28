@@ -1,29 +1,38 @@
 import React from "react";
 import heroImg from "../images/icons/gc.png";
 import Header from "../components/header";
+import heroDesktop from "../images/icons/cards.png";
+import heroMobile from "../images/icons/cards-m.png"; 
 // import "../css";
 import { useState, useEffect } from "react";
 import "../App"
 function Cards() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+      const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth <= 768);
+    checkScreen();
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
     return (
         <>
             {/* 🌟 HERO SECTION */}
-            <section className="hero-section">
-                <Header />
-                <div className="hero-overlay"></div>
-                <img src={heroImg} alt="Hero" className="hero-bg" />
-            </section>
+                 <section className="hero-section" style={{ position: "relative" }}>
+        <Header />
+
+        {/* Only ONE image will show based on screen size */}
+        <img
+          src={isMobile ? heroMobile : heroDesktop}
+          alt="Hero"
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+          }}
+        />
+      </section>
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">

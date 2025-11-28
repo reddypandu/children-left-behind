@@ -1,31 +1,58 @@
 import React from "react";
 import heroImg from "../images/icons/gc.png";
 import Header from "./header";
+import heroDesktop from "../images/icons/partners-desk.png";
+import heroMobile from "../images/icons/partners-m.png"; 
+import { useState,useEffect } from "react";
 // import "../css";
 import "../App"
 function ChildCenter() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkScreen = () => setIsMobile(window.innerWidth <= 768);
+        checkScreen();
+
+        window.addEventListener("resize", checkScreen);
+        return () => window.removeEventListener("resize", checkScreen);
+    }, []);
     return (
         <>
             {/* 🌟 HERO SECTION */}
-            <section className="hero-section">
+            {/* <section className="hero-section">
                 <Header />
                 <div className="hero-overlay"></div>
                 <img src={heroImg} alt="Hero" className="hero-bg" />
+            </section> */}
+            <section className="hero-section" style={{ position: "relative" }}>
+                <Header />
+
+                {/* Only ONE image will show based on screen size */}
+                <img
+                    src={isMobile ? heroMobile : heroDesktop}
+                    alt="Hero"
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        display: "block",
+                    }}
+                />
             </section>
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-                     <div>
-                            <h2 className="text-xl font-bold mb-2">
+                    <div>
+                        <h2 className="text-xl font-bold mb-2">
                             Background
-                            </h2> <br></br>
-                            <p>
+                        </h2> <br></br>
+                        <p>
                             Guided by the motto “Reaching the Unreached,” CGC focuses on supporting individuals who are economically disadvantaged, socially excluded, or in need of special care including children with disabilities, orphaned and abandoned children, street children, child labourers, traumatized women, and the elderly
-                            </p>
-                        </div><br></br>
+                        </p>
+                    </div><br></br>
 
-                  
+
 
                     <h3 className="sub-title">Projects</h3>
 
@@ -94,154 +121,154 @@ function ChildCenter() {
                             </p>
                         </div><br></br>
 
-                           {/* Project 4 */}
+                        {/* Project 4 */}
                         <div>
                             <p className="text-xl font-bold mb-2">
                                 Project 4: BALABATA
                             </p>
                             <p>
-                             Balabata is a development initiative for nearly 1200 Dalit children in 4 districts who are in the age group of 5-10 years enrolled in the local primary schools. The teachers in the Primary school are appointed and paid by the State government. Most of the teachers stay in the nearby towns but not in the villages where they are supposed to stay and work. Hence the teachers failed to devote more time to students. The illiterate parents neglect their children’s education. Hence the dropout rate is high. To reduce the dropout rate the Balabata program was started.
+                                Balabata is a development initiative for nearly 1200 Dalit children in 4 districts who are in the age group of 5-10 years enrolled in the local primary schools. The teachers in the Primary school are appointed and paid by the State government. Most of the teachers stay in the nearby towns but not in the villages where they are supposed to stay and work. Hence the teachers failed to devote more time to students. The illiterate parents neglect their children’s education. Hence the dropout rate is high. To reduce the dropout rate the Balabata program was started.
                             </p>
                         </div><br></br>
-                    
-                       <div>
+
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                             Balabata program is four fold:
+                                Balabata program is four fold:
                             </p>
                             <p>Education through play way methods – Songs and Scripts.<br></br>
-                            Encouraging children to motivate their parents to start kitchen gardens at their homes.<br></br>
-                            Encouraging children in Clean and green activities.<br></br>
-                            Enabling their parents to take up Income Generation programs.</p>
-                            
+                                Encouraging children to motivate their parents to start kitchen gardens at their homes.<br></br>
+                                Encouraging children in Clean and green activities.<br></br>
+                                Enabling their parents to take up Income Generation programs.</p>
+
                         </div><br></br>
-                           <div>
+                        <div>
                             <p className="text-xl font-bold mb-2">
                                 Project 5: CHEYUTHA PROJECT
                             </p>
                             <p>
-                           Cheyutha Project is an Income Generating Program wherein the parents of the disabled are provided loans to support better employment. Over the last several years many children/parents have utilized this opportunity and have expressed their satisfaction.
+                                Cheyutha Project is an Income Generating Program wherein the parents of the disabled are provided loans to support better employment. Over the last several years many children/parents have utilized this opportunity and have expressed their satisfaction.
                             </p>
                         </div><br></br>
 
-                            <div>
+                        <div>
                             <p className="text-xl font-bold mb-2">
                                 Project 6: COMMUNITY BASED REHABILITATION PROGRAMS
                             </p>
                             <p>
-                             Regular Camps are conducted in different districts to identify the disabled and provide them with proper support and referrals and involving several stake holders. Door to door surveys are conducted at regular intervals to identify the handicapped and help them by providing them appropriate information regarding rehabilitation services available. The Community Based Rehabilitation Programs gradually aim at enabling the community to take up the responsibility of the disabled people.
+                                Regular Camps are conducted in different districts to identify the disabled and provide them with proper support and referrals and involving several stake holders. Door to door surveys are conducted at regular intervals to identify the handicapped and help them by providing them appropriate information regarding rehabilitation services available. The Community Based Rehabilitation Programs gradually aim at enabling the community to take up the responsibility of the disabled people.
                             </p>
                         </div><br></br>
 
-                            <div>
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                              Project 7: HIV-AIDS – CARE, SUPPORT AND AWARENESS PROGRAM
+                                Project 7: HIV-AIDS – CARE, SUPPORT AND AWARENESS PROGRAM
                             </p>
                             <p>
-                         “Prevention is better than cure” as such to fight against spreading of HIV/AIDS through cultural programmes is the main endeavor/aim for this unique project to reach the unreached. The cultural team attracts the attention of the public through (Dam Dora) drum beating. Songs and Body theatre is the main medium through which message is conveyed.
-                            </p>
-                        </div><br></br>
-                       
-                             <div>
-                            <p className="text-xl font-bold mb-2">
-                              Project 8: DR RANJAN BABU VOCATIONAL JUNIOR COLLEGE
-                            </p>
-                            <p>
-                         The Dr. Ranjan Babu Vocational Junior College was established in the year 2004. The main motive behind starting this college was to provide educational opportunities to those students who would otherwise find it difficult to obtain admission in regular colleges with their low socioeconomic status and grades.
+                                “Prevention is better than cure” as such to fight against spreading of HIV/AIDS through cultural programmes is the main endeavor/aim for this unique project to reach the unreached. The cultural team attracts the attention of the public through (Dam Dora) drum beating. Songs and Body theatre is the main medium through which message is conveyed.
                             </p>
                         </div><br></br>
 
-                          {/* {9} */}
-
-                          <div>
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                             Project 9: TSUNAMI REHABILITATION PROGRAMS
+                                Project 8: DR RANJAN BABU VOCATIONAL JUNIOR COLLEGE
                             </p>
                             <p>
-                            As a part of this project about 103 permanent houses have been constructed for the villagers with the association of the Andhra Pradesh Housing Board Society. Two Tsunami Shelter homes for the Orphans accommodating 50 orphans each have been built to provide shelter to the children who were left as orphans by the catastrophe
+                                The Dr. Ranjan Babu Vocational Junior College was established in the year 2004. The main motive behind starting this college was to provide educational opportunities to those students who would otherwise find it difficult to obtain admission in regular colleges with their low socioeconomic status and grades.
                             </p>
                         </div><br></br>
 
+                        {/* {9} */}
 
-                           {/* {10} */}
-                             <div>
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                            Project 10: MEDICAL CAMPS
+                                Project 9: TSUNAMI REHABILITATION PROGRAMS
                             </p>
                             <p>
-                           Free Medical Camps (Dental and Eye Camps) are conducted wherein eye and dental checkups are done. Cases are identified for operations after which they are assisted to get operated. Preventive medicines for a few diseases are distributed.
-                            </p>
-                        </div><br></br>
-                           {/* {11} */}
-                             <div>
-                            <p className="text-xl font-bold mb-2">
-                             Project 11: WATER PROJECT
-                            </p>
-                            <p>
-                          Until now we have installed 4 boring (Water Holes) through the support of POW and we are very grateful to them for supporting this cause.
-                            </p>
-                        </div><br></br>
-                           {/* {12} */}
-                             <div>
-                            <p className="text-xl font-bold mb-2">
-                             Project 12: VOCATIONAL TRAINING/REHABILITATION CENTER FOR THE DISABLED
-                            </p>
-                            <p>
-                         The Vocational Training/Rehabilitation Center provides vocational training for people with all types of Disabilities. This project aims at developing the skills of the deferentially abled and enabling them to be productive members of the society.
-                            </p>
-                        </div><br></br>
-                           {/* {13} */}
-                             <div>
-                            <p className="text-xl font-bold mb-2">
-                             Project 13: HERALD HUMAN RESOURCE ACADEMY
-                            </p>
-                            <p>
-                             Child Guidance Center is presently working towards developing human resources in the field of Mental Retardation. The Rehabilitation Council of India has approved the organization to conduct a two year Diploma to prepare professionals (Special Teachers) in the field of Mental Retardation as there is a dearth of professionals in the field of disability (Diploma in Education, Special Education, and Mental Retardation).
-                            </p>
-                        </div><br></br>
-                           {/* {14} */}
-                             <div>
-                            <p className="text-xl font-bold mb-2">
-                             Project 14: CENTER FOR TRAUMATIZED WOMEN
-                            </p>
-                            <p>
-                          The Center for the Traumatized Women has been established in Guntur. This center works towards the restoration and rehabilitation of 200 traumatized women (including women with disability), by helping them develop into responsible citizens. Vocational Training in different trades like Bangle Making, Beautician course, Bakery, Gardening, etc. is provided to them to make them self reliant.
+                                As a part of this project about 103 permanent houses have been constructed for the villagers with the association of the Andhra Pradesh Housing Board Society. Two Tsunami Shelter homes for the Orphans accommodating 50 orphans each have been built to provide shelter to the children who were left as orphans by the catastrophe
                             </p>
                         </div><br></br>
 
-                           {/* {15} */}
-                             <div>
+
+                        {/* {10} */}
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                            Project 15: SHORT TERM COURSES
+                                Project 10: MEDICAL CAMPS
                             </p>
                             <p>
-                           Government of Andhra Pradesh sanctioned the following Short Term Courses for our institute: Bakery & Confectionery, Beautician Course, Embroidery & Zig-Zag, Pre Primary Teacher Training, Farm Assistant, Gardener Training Course, Accounting Package, DTP and M.S.Office. The purpose of these courses is to generate employment opportunities who could not secure jobs even after acquiring the required qualifications. There is heavy demand for this courses in private and government sectors and the qualified candidate can establish their own entities and earn independently and employee others in their entities.
+                                Free Medical Camps (Dental and Eye Camps) are conducted wherein eye and dental checkups are done. Cases are identified for operations after which they are assisted to get operated. Preventive medicines for a few diseases are distributed.
                             </p>
                         </div><br></br>
-                           {/* {16} */}
-                             <div>
+                        {/* {11} */}
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                              Project 16: DR SWARNALATHA DEVI VOCATIONAL JUNIOR COLLEGE
+                                Project 11: WATER PROJECT
                             </p>
                             <p>
-                          The Dr. Swarnalatha Devi Vocational Junior College was established in the year 2011. The main motive behind starting this college was to provide educational opportunities to the girls belonging to remote rural areas who would otherwise find it difficult to obtain admission in regular colleges with their low socioeconomic status and grades.
+                                Until now we have installed 4 boring (Water Holes) through the support of POW and we are very grateful to them for supporting this cause.
                             </p>
                         </div><br></br>
-                           {/* {17} */}
-                             <div>
+                        {/* {12} */}
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                            Project 17: HOLISTIC REHABILITATION FACILTY FOR PEOPLE WITH DISABILITIES
+                                Project 12: VOCATIONAL TRAINING/REHABILITATION CENTER FOR THE DISABLED
                             </p>
                             <p>
-                            The Holistic Rehabilitation Facility established at Guntur is an attempt at providing comprehensive rehabilitation services to people with Disabilities. The aim is to empower the differentially abled by offering qualitative rehabilitation services thus enabling them to be integrated into the society by encouraging full participation and protection of their rights. The center will offer various services including Developmental, Intellectual, Audio Logical and Ophthalmological Assessment and Intervention services. The center will work towards preventive and promotional aspects of rehabilitation like education, employment and vocational training, research and manpower development, creation of barrier-free environment.
+                                The Vocational Training/Rehabilitation Center provides vocational training for people with all types of Disabilities. This project aims at developing the skills of the deferentially abled and enabling them to be productive members of the society.
                             </p>
                         </div><br></br>
-                           {/* {18} */}
-                             <div>
+                        {/* {13} */}
+                        <div>
                             <p className="text-xl font-bold mb-2">
-                            Project 18: COMMUNITY HEALTH SHELTERS
+                                Project 13: HERALD HUMAN RESOURCE ACADEMY
                             </p>
                             <p>
-                            The Community Health Shelters are presently functioning in the district of Guntur. These shelters have been established to promote health care of the people in the community. The project aims at providing proper medical amenities to the people of the village and improve their health conditions by educating them about hygiene and sanitation. The shelters offer preliminary tests for common diseases among the people. The Community Health Shelter primarily offers basic first aid for physical and mental ailments.
+                                Child Guidance Center is presently working towards developing human resources in the field of Mental Retardation. The Rehabilitation Council of India has approved the organization to conduct a two year Diploma to prepare professionals (Special Teachers) in the field of Mental Retardation as there is a dearth of professionals in the field of disability (Diploma in Education, Special Education, and Mental Retardation).
+                            </p>
+                        </div><br></br>
+                        {/* {14} */}
+                        <div>
+                            <p className="text-xl font-bold mb-2">
+                                Project 14: CENTER FOR TRAUMATIZED WOMEN
+                            </p>
+                            <p>
+                                The Center for the Traumatized Women has been established in Guntur. This center works towards the restoration and rehabilitation of 200 traumatized women (including women with disability), by helping them develop into responsible citizens. Vocational Training in different trades like Bangle Making, Beautician course, Bakery, Gardening, etc. is provided to them to make them self reliant.
+                            </p>
+                        </div><br></br>
+
+                        {/* {15} */}
+                        <div>
+                            <p className="text-xl font-bold mb-2">
+                                Project 15: SHORT TERM COURSES
+                            </p>
+                            <p>
+                                Government of Andhra Pradesh sanctioned the following Short Term Courses for our institute: Bakery & Confectionery, Beautician Course, Embroidery & Zig-Zag, Pre Primary Teacher Training, Farm Assistant, Gardener Training Course, Accounting Package, DTP and M.S.Office. The purpose of these courses is to generate employment opportunities who could not secure jobs even after acquiring the required qualifications. There is heavy demand for this courses in private and government sectors and the qualified candidate can establish their own entities and earn independently and employee others in their entities.
+                            </p>
+                        </div><br></br>
+                        {/* {16} */}
+                        <div>
+                            <p className="text-xl font-bold mb-2">
+                                Project 16: DR SWARNALATHA DEVI VOCATIONAL JUNIOR COLLEGE
+                            </p>
+                            <p>
+                                The Dr. Swarnalatha Devi Vocational Junior College was established in the year 2011. The main motive behind starting this college was to provide educational opportunities to the girls belonging to remote rural areas who would otherwise find it difficult to obtain admission in regular colleges with their low socioeconomic status and grades.
+                            </p>
+                        </div><br></br>
+                        {/* {17} */}
+                        <div>
+                            <p className="text-xl font-bold mb-2">
+                                Project 17: HOLISTIC REHABILITATION FACILTY FOR PEOPLE WITH DISABILITIES
+                            </p>
+                            <p>
+                                The Holistic Rehabilitation Facility established at Guntur is an attempt at providing comprehensive rehabilitation services to people with Disabilities. The aim is to empower the differentially abled by offering qualitative rehabilitation services thus enabling them to be integrated into the society by encouraging full participation and protection of their rights. The center will offer various services including Developmental, Intellectual, Audio Logical and Ophthalmological Assessment and Intervention services. The center will work towards preventive and promotional aspects of rehabilitation like education, employment and vocational training, research and manpower development, creation of barrier-free environment.
+                            </p>
+                        </div><br></br>
+                        {/* {18} */}
+                        <div>
+                            <p className="text-xl font-bold mb-2">
+                                Project 18: COMMUNITY HEALTH SHELTERS
+                            </p>
+                            <p>
+                                The Community Health Shelters are presently functioning in the district of Guntur. These shelters have been established to promote health care of the people in the community. The project aims at providing proper medical amenities to the people of the village and improve their health conditions by educating them about hygiene and sanitation. The shelters offer preliminary tests for common diseases among the people. The Community Health Shelter primarily offers basic first aid for physical and mental ailments.
                             </p>
                         </div>
                     </div>
