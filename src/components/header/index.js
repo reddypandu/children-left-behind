@@ -50,14 +50,14 @@ const Header = () => {
 
                                         </ul>
                                     </li>
-                                    <li><Link to="/event" title="">Our Impacts</Link>
+                                    <li><Link to="/" title="">Our Impacts</Link>
 
                                     </li>
                                     <li><Link to="/stayinformed" title="">Stay Informed</Link>
 
                                     </li>
 
-                                    <li><Link to="/contact" title="">How to be involved?</Link></li>
+                                    {/* <li><Link to="/contact" title="">How to be involved?</Link></li> */}
                                 </ul>
                                 <ul className="col-lg-3">
                                     <li><Link to="/case" className='drop-downn' title="">Resources</Link>
