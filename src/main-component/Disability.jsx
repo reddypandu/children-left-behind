@@ -177,7 +177,7 @@ function Disability() {
                         <li>HIV & AIDS</li>
                     </ul> */}
 
-                    <h2 className="sub-title mt-5">Supporting Disabled Children</h2>
+                    <h2 className="sub-title mt-5">Supporting Disabled Children</h2><br></br>
                     <p className="description">
                         Children Left Behind is actively involved in improving the lives and education of children with intellectual and physical disabilities in developing countries.<br></br> <br></br>
                         Often in developing countries it is believed that having a disability is due to a curse or karma, and those with disabilities are often hidden or shunned from society.<br></br><br></br>
