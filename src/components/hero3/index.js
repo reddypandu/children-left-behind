@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link}  from 'react-router-dom';
 import HeroImg from '../../images/slider/Imagee.png'
+import './style.css'
 
 const Hero3 = (props) => {
 

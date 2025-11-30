@@ -28,7 +28,10 @@ const About = (props) => {
                               <p>From essential care in India to international opportunities, learn how our unique programs are changing lives.</p>
                           </div>
                       </div>
-                    <div className="col-lg-6 col-md-12 colsm-12">
+                      <div className='row py-4'>
+
+                     
+                    <div className="col-lg-7 col-md-12 colsm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 {/* <span>What We Do?</span> */}
@@ -42,19 +45,20 @@ const About = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 colsm-12">
+                    <div className="col-lg-5 col-md-12 colsm-12">
                         <div className="wpo-about-img-3">
-                            <img src={abimg} className='img' alt=""/>
+                            <img src={abimg} className='img w-100' alt=""/>
                         </div>
                     </div>
+                     </div>
                     </div>
                     <div className='row py-4'>
-                    <div className="col-lg-6 col-md-12 colsm-12">
+                    <div className="col-lg-5 col-md-12 colsm-12">
                         <div className="wpo-about-img-3">
-                            <img src={abimggg} className='imgg' alt=""/>
+                            <img src={abimggg} className='imgg w-100' alt=""/>
                         </div>
                     </div>
-                      <div className="col-lg-6 col-md-12 colsm-12">
+                      <div className="col-lg-7 col-md-12 colsm-12">
                         <div className="wpo-about-text text-right">
                             <div className="wpo-section-title ">
                                 {/* <span>What We Do?</span> */}
@@ -71,7 +75,7 @@ const About = (props) => {
                 </div>
                     <div className='row py-4'>
                     
-                      <div className="col-lg-6 col-md-12 colsm-12">
+                      <div className="col-lg-7 col-md-12 colsm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 {/* <span>What We Do?</span> */}
@@ -85,9 +89,9 @@ const About = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 colsm-12">
+                    <div className="col-lg-5 col-md-12 colsm-12">
                         <div className="wpo-about-img-3">
-                            <img src={abimgg} className='imggg' alt=""/>
+                            <img src={abimgg} className='imggg w-100' alt=""/>
                         </div>
                     </div>
                 </div>

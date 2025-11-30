@@ -1,0 +1,14 @@
+.hero-style-3 .slide-title{
+    width:500px;
+}
+.hero-style-3 .slide-title h2{
+    line-height: 56px !important;
+   font-size: 52px !important;
+}
+.hero-style-3 .slide-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}

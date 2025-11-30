@@ -3,7 +3,7 @@
 .wpo-about-text-2 .wpo-section-title {
     text-align: left;
     margin: unset;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .wpo-about-area{
      position: relative;
@@ -14,12 +14,14 @@
 }
 
 .wpo-about-area .icon-left{
-    top:-4%;
+    top:-15%;
 left: 0;
+width: 200px;
 }
 .wpo-about-area .icon-right{
-     top:-10%;
+     top:-20%;
 right: 0;
+width: 500px;
 }
 @media(max-width:992px){
     .wpo-about-area .icon-left{
@@ -35,7 +37,7 @@ width:400px;
 }
 .wpo-about-text p,
 .wpo-about-text-2 p {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .wpo-about-text {
@@ -52,7 +54,7 @@ align-items: center;
 }
 .wpo-about-img-3 {
     /* width: 165%; */
-    position: relative;
+    /* position: relative; */
     /* right: -34px;
     top: -25px; */
 

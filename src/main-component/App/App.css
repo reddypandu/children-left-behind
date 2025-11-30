@@ -2,6 +2,13 @@
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: "BonV-all";
+  src: url("/src/fonts/Awesome/Regular/AwesomeSerif-SemiBoldTall.otf") format("opentype");
+  font-weight: normal;
+}
+
 html {
   font-size: 16px;
 }
@@ -37,15 +44,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Awesome Serif";
+  font-family: "BonV-all";
   /* color: #062265; */
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Awesome Serif";
-  /* color: #062265; */
-  font-weight: 700 !important;
-}
+
 
 ul {
   padding-left: 0;
