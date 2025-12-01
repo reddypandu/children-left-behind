@@ -44,10 +44,10 @@ function Disability() {
 
             </div>
 
-            <div style={{padding:'50px'}}>
-                   <p>
+            <div style={{ padding: '50px' }}>
+                <p>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
-                    </p>
+                </p>
             </div>
             <section style={{ width: "100%", overflow: "hidden", padding: "0px 0", background: "#fff" }}>
 
@@ -177,7 +177,7 @@ function Disability() {
                         <li>HIV & AIDS</li>
                     </ul> */}
 
-                    <h2 className="sub-title mt-5">Supporting Disabled Children</h2><br></br>
+                    <h2 style={{ fontWeight: '600', fontSize: '32px', lineHeight: '40px', letterSpacing: '2%' }} className="sub-title mt-5">Supporting Disabled Children</h2><br></br>
                     <p className="description">
                         Children Left Behind is actively involved in improving the lives and education of children with intellectual and physical disabilities in developing countries.<br></br> <br></br>
                         Often in developing countries it is believed that having a disability is due to a curse or karma, and those with disabilities are often hidden or shunned from society.<br></br><br></br>
