@@ -24,7 +24,7 @@ const Header = () => {
 
                             <nav className='row'>
                                 <ul className="col-lg-9">
-                                    <li><Link className="active" to="/about" title="">About Us</Link>
+                                    <li><Link className="" to="/about" title="">About Us</Link>
 
                                     </li>
                                     <li><Link to="/case" className='drop-downn' title="">Our Programs</Link>
@@ -63,7 +63,7 @@ const Header = () => {
                                     <li><Link to="/resources" className='' title="">Resources</Link>
                                     </li>
                                     <li><Link to="/faq" title="">F.A.Q</Link></li>
-                                    {/* <li><Link to="/contact" title="">Subscribe</Link></li> */}
+                                    <li><Link to="/" title="">Subscribe</Link></li>
 
 
 

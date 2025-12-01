@@ -106,11 +106,11 @@ const menus = [
         title: 'F.A.Q',
         link: '/faq',
     },
-    // {
-    //     id: 9,
-    //     title: 'Subscribe',
-    //     link: '/contact',
-    // }
+    {
+        id: 9,
+        title: 'Subscribe',
+        link: '/',
+    }
 
 
 ]
