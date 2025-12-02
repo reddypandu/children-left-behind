@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-import img1 from "/Work/children-left-behind/src/images/icons/Vector.png"
+// import img1 from "/Work/children-left-behind/src/images/icons/Vector.png"
+import img1 from "../../images/icons/Vector.png"
 
 const WhatWeDo = () => {
     const tags = [
