@@ -6,6 +6,7 @@ import VideoModal from '../ModalVideo'
 import ms6 from '../../images/icons/2.png'
 import ms7 from '../../images/icons/1.png'
 import './style.css'
+import m1 from "../../images/icons/image 3.svg"
 
 const About = (props) => {
     const ClickHandler = () =>{

@@ -13,7 +13,7 @@ const InfoSection = () => {
 
         {/* LOCATION */}
         <div className="info-col">
-             <h4 className="info-title">Est.</h4>
+          <h4 style={{color:'#1C191E'}} className="info-title">Est.</h4>
           <p className="info-text">1973</p>
           <h4 className="info-title">Location</h4>
           <p className="info-text">

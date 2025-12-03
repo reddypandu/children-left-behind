@@ -18,8 +18,10 @@
 
 .info-title {
   font-weight: 600;
-  font-size: 14px;
-  color: #333;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color:#1C191E !important;
+  font-family: "work sans" !important;
   margin-bottom: 8px;
 }
 

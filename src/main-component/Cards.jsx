@@ -42,7 +42,48 @@ function Cards() {
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-<PartnersEst />
+{/* <PartnersEst /> */}
+
+     <div className="info-wrapper">
+      <div className="info-row">
+
+       
+
+        {/* LOCATION */}
+        <div className="info-col">
+          <h4 style={{color:'#1C191E'}} className="info-title">Est.</h4>
+          <p className="info-text">2014</p>
+          <h4 className="info-title">Location</h4>
+          <p className="info-text">
+            P.O.Box No. 309, Santosh Nagar<br/>
+            Guntur-522004, AP, India.
+          </p>
+        </div>
+
+        {/* CONTACT */}
+        <div className="info-col">
+          <h4 className="info-title">Contact</h4>
+          <p className="info-text">+91 (0863) 2231942</p>
+          <p className="info-text">info@cardsinternational.org</p>
+        </div>
+
+        {/* WEBSITE */}
+        <div className="info-col">
+          <h4 className="info-title">Website</h4>
+          <a
+            className="info-link"
+            href="https://cardsinternational.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://cgcindia.org/
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
                     <div className="p-6 space-y-6 leading-relaxed text-gray-800">
                         {/* Project 1 */}
                         <div>

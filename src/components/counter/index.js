@@ -54,7 +54,7 @@ const CounterSection = (props) => {
                     }, {
                         icon: img3,
                         count: "5",
-                        text: "Dedicated Regional Care Centres"
+                        text: "Dedicated Regional Care"
                     }].map((item, index) => (
                         <div key={index} className='col-lg-3 col-md-6 d-flex justify-content-center'>
                             <div className="grid" style={cardStyle}>

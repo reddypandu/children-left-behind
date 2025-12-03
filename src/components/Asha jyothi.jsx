@@ -25,25 +25,66 @@ function Ashajyothi() {
     return (
         <>
             <div className="pavani-wrapper container">
-      {/* Background Illustrations */}
-      <img src={LeftBG} alt="" className="pavani-left" />
-      <img src={RightBG} alt="" className="pavani-right" />
+                {/* Background Illustrations */}
+                <img src={LeftBG} alt="" className="pavani-left" />
+                <img src={RightBG} alt="" className="pavani-right" />
 
-      <div className="pavani-content">
-        <img src={PavaniLogo} alt="Pavani School" className="pavani-logo" />
+                <div className="pavani-content">
+                    <img src={PavaniLogo} alt="Pavani School" className="pavani-logo" />
 
-        <h1 className="pavani-title">AASHA JYOTHI Welfare Association for Disability</h1>
+                    <h1 className="pavani-title">AASHA JYOTHI Welfare Association for Disability</h1>
 
-        <p className="pavani-description">
-          with a motive of providing educational and vocational opportunities for the disabled to make them self-dependent and productive members of the society. The main thrusts of the society are Schools for Disabled Children, Formal and Non Formal Education, forming of Parents Associations for the Disabled, Emergency Relief Programs, Child Labour schools, Micro Credit program, Community Based Rehabilitation Programs
-        </p>
-      </div>
-    </div>
+                    <p className="pavani-description">
+                        with a motive of providing educational and vocational opportunities for the disabled to make them self-dependent and productive members of the society. The main thrusts of the society are Schools for Disabled Children, Formal and Non Formal Education, forming of Parents Associations for the Disabled, Emergency Relief Programs, Child Labour schools, Micro Credit program, Community Based Rehabilitation Programs
+                    </p>
+                </div>
+            </div>
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-                    <PartnersEst />
+                    <div className="info-wrapper">
+                        <div className="info-row">
+
+
+
+                            {/* LOCATION */}
+                            <div className="info-col">
+                                <h4 style={{ color: '#1C191E' }} className="info-title">Est.</h4>
+                                <p className="info-text">1987</p>
+                                <h4 className="info-title">Location</h4>
+                                <p className="info-text">
+                                    Welfare Association for the Disabled,<br/>
+                                    Tondan Sadan, H.No.3-156/2/A,<br/>
+                                    Ravindra Nagar,<br/>
+                                    Nandipahad, Chillapur Road,<br/>
+                                    Miriyalaguda. 508207.<br/>
+                                    Telangana.
+                                </p>
+                            </div>
+
+                            {/* CONTACT */}
+                            <div className="info-col">
+                                <h4 className="info-title">Contact</h4>
+                                <p className="info-text">+91 7569990626</p>
+                                <p className="info-text">ashajyothi97@gmail.com</p>
+                            </div>
+
+                            {/* WEBSITE */}
+                            <div className="info-col">
+                                <h4 className="info-title">Website</h4>
+                                <a
+                                    className="info-link"
+                                    href="https://aashajyothi.org/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    https://aashajyothi.org/
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                     <div className="p-6 space-y-6 leading-relaxed text-gray-800">
                         <h3 className="sub-title">   OUR VISION</h3>
                         <p className="description">
@@ -91,10 +132,10 @@ function Ashajyothi() {
                     </div>
                 </div>
             </section>
-               <BlogSection />
-                    <CtaSection ctaclass={'wpo-cta-area-2'} />
-                    <Needs />
-                 
+            <BlogSection />
+            <CtaSection ctaclass={'wpo-cta-area-2'} />
+            <Needs />
+
         </>
     );
 }
