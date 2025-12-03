@@ -1,8 +1,8 @@
 import React from "react";
-import heroImg from "../images/icons/gc.png";
+import PavaniLogo from "../images/icons/pavani-logo.png";
 import Header from "../components/header";
-import heroDesktop from "../images/icons/pavani.png";
-import heroMobile from "../images/icons/pavani-m.png";
+import LeftBG from "../images/icons/pavani-left.png";
+import RightBG from "../images/icons/pavani-right.png";
 import { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
@@ -23,20 +23,24 @@ function Pavani() {
     }, []);
     return (
         <>
-            {/* 🌟 HERO SECTION */}
-            <section className="hero-section" style={{ position: "relative" }}>
+           <div className="pavani-wrapper container">
+      {/* Background Illustrations */}
+      <img src={LeftBG} alt="" className="pavani-left" />
+      <img src={RightBG} alt="" className="pavani-right" />
 
-                {/* Only ONE image will show based on screen size */}
-                <img
-                    src={isMobile ? heroMobile : heroDesktop}
-                    alt="Hero"
-                    style={{
-                        width: "100%",
-                        height: "auto",
-                        display: "block",
-                    }}
-                />
-            </section>
+      <div className="pavani-content">
+        <img src={PavaniLogo} alt="Pavani School" className="pavani-logo" />
+
+        <h1 className="pavani-title">Pavani Special School</h1>
+
+        <p className="pavani-description">
+          endeavors to provide children with mental disabilities and hearing
+          impairment with basic life skills that enrich their quality of life
+          and also strives to equip them with the requisite skills to gain
+          employment through vocational education.
+        </p>
+      </div>
+    </div>
 
 
             <section className="content-section">

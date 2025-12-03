@@ -1,8 +1,5 @@
 import React from "react";
-import heroImg from "../images/icons/gc.png";
-import Header from "./header";
-import heroDesktop from "../images/icons/partners-desk.png";
-import heroMobile from "../images/icons/partners-m.png";
+import heroImg from "../images/icons/partners.png";
 import { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
@@ -24,11 +21,19 @@ function ChildCenter() {
     return (
         <>
         
-            <section className="hero-section">
-            
-                <div className="hero-overlay"></div>
-                <img src={heroImg} alt="Hero" className="hero-bg" />
-            </section>
+                  <section className="wpo-about-area">
+                       <div className="container child">
+                           <div className="row align-items-center">
+                               <div className="col-md-6">
+                                   <h2 className="wpo-section-title about">Impacting through mission partners</h2>
+                                   <p>We offering programs are coordinated through our mission partners, an innovative network that connects children in need to the people and organizations prepared to help them.</p>
+                               </div>
+                               <div className="col-md-6">
+                                   <img src={heroImg} alt=""/>
+                               </div>
+                           </div>
+                       </div>
+                   </section>
 
 
 
