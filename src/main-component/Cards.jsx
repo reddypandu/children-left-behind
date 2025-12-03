@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
 import Needs from "../components/needs";
+import PartnersEst from "../components/partnersEst";
 // import "../css";
 import { useState, useEffect } from "react";
 import "../App"
@@ -41,7 +42,7 @@ function Cards() {
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-
+<PartnersEst />
                     <div className="p-6 space-y-6 leading-relaxed text-gray-800">
                         {/* Project 1 */}
                         <div>

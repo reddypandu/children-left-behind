@@ -12,9 +12,9 @@ const CtaSection = (props) => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="wpo-cta-text">
-                            <h2>Lets build a 
+                            <h2 className='text-white'>Lets build a 
 Safe Space together!</h2>
-                            <p>Follow us on youtube for more live content</p>
+                            <p className='text-white'>Follow us on youtube for more live content</p>
                             <div className="btns">
                                 <Link onClick={ClickHandler} to="/donate" className="theme-btn">View Media</Link>
                             </div>

@@ -7,6 +7,9 @@ import CtaSection from "../components/cta";
 import Needs from "../components/needs";
 // import "../css";
 import "../App"
+
+import PartnersEst from "./partnersEst";
+
 function ChildCenter() {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -47,6 +50,7 @@ function ChildCenter() {
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
+                    <PartnersEst />
                     <div>
                         <h2 className="text-xl font-bold mb-2">
                             Background

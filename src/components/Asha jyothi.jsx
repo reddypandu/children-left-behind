@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
 import Needs from "../components/needs";
+import PartnersEst from "../components/partnersEst";
 // import "../css";
 import "../App"
 function Ashajyothi() {
@@ -42,6 +43,7 @@ function Ashajyothi() {
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
+                    <PartnersEst />
                     <div className="p-6 space-y-6 leading-relaxed text-gray-800">
                         <h3 className="sub-title">   OUR VISION</h3>
                         <p className="description">
