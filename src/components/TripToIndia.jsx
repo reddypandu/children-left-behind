@@ -74,7 +74,7 @@ function TripToIndia() {
                     <span onClick={() => navigate("/education")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Education</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/midical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
+                    <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>

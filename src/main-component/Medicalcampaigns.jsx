@@ -70,7 +70,7 @@ function Medicalcampaigns() {
                     <span onClick={() => navigate("/education")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Education</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/midical")}  style={{
+                    <span onClick={() => navigate("/medical")}  style={{
                         background: "#F2E5FF",
                         color: "#7A3CFF",
                         padding: "6px 12px",
