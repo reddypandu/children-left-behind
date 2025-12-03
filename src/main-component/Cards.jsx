@@ -1,8 +1,8 @@
 import React from "react";
-import heroImg from "../images/icons/gc.png";
+import PavaniLogo from "../images/icons/cards-logo.png";
 import Header from "../components/header";
-import heroDesktop from "../images/icons/cards.png";
-import heroMobile from "../images/icons/cards-m.png";
+import LeftBG from "../images/icons/pavani-left.png";
+import RightBG from "../images/icons/pavani-right.png";
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
@@ -22,21 +22,21 @@ function Cards() {
     }, []);
     return (
         <>
-            {/* 🌟 HERO SECTION */}
-            <section className="hero-section" style={{ position: "relative" }}>
-                {/* <Header /> */}
-
-                {/* Only ONE image will show based on screen size */}
-                <img
-                    src={isMobile ? heroMobile : heroDesktop}
-                    alt="Hero"
-                    style={{
-                        width: "100%",
-                        height: "auto",
-                        display: "block",
-                    }}
-                />
-            </section>
+            <div className="pavani-wrapper container">
+                 {/* Background Illustrations */}
+                 <img src={LeftBG} alt="" className="pavani-left" />
+                 <img src={RightBG} alt="" className="pavani-right" />
+           
+                 <div className="pavani-content">
+                   <img src={PavaniLogo} alt="Pavani School" className="pavani-logo" />
+           
+                   <h1 className="pavani-title">Community and Rural Development Society (CARDS)</h1>
+           
+                   <p className="pavani-description">
+                     CARDS exists to empower Dalit communities through education, awareness, equal opportunities, social justice, and community-driven development. Our purpose is rooted in the belief that every Dalit individual 
+                   </p>
+                 </div>
+               </div>
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
