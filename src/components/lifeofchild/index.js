@@ -1,9 +1,6 @@
 import React from 'react'
-import ms1 from '../../images/mission/icon1.png'
-import ms2 from '../../images/mission/icon2.png'
-import ms3 from '../../images/mission/icon3.png'
-import ms4 from '../../images/mission/icon4.png'
-import ms5 from '../../images/about6.png'
+import LeftBG from "../../images/icons/pavani-left.png";
+import RightBG from "../../images/icons/pavani-right.png";
 import TiltCarousel from '../TiltCarousel'
 
 import './style.css'
@@ -11,9 +8,11 @@ import './style.css'
 const Mission = (props) => {
     return (
         <div className={`wpo-mission-area ${props.subclass}`}>
-            <div className="container">
-
+            <div className="container heart pb-5 mb-5">
+  
                 <div className="row">
+                    <img src={LeftBG} alt="" className="pavani-left" />
+      <img src={RightBG} alt="" className="pavani-right" />
                     <div className="col-12">
                         <div className="wpo-section-title">
                             <span>LIFE OF A CHILD</span>

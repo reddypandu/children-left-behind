@@ -310,7 +310,7 @@
 .wpo-site-footer-2 .wpo-lower-footer {
     text-align: center;
     position: relative;
-    background: #011b58;
+    /* background: ; */
 }
 
 .wpo-site-footer .wpo-lower-footer .row,
@@ -326,6 +326,7 @@
     font-size: 15px;
     font-size: 0.9375rem;
     margin: 0;
+    color:white !important;
 }
 
 @media (max-width: 991px) {

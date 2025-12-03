@@ -244,7 +244,7 @@ img {
 .wpo-section-title {
   text-align: center;
   position: relative;
-  max-width: 500px;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 20px;
 }

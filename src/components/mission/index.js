@@ -23,7 +23,7 @@ const Mission = (props) => {
 
   return (
     <div className={`wpo-mission-area ${props.subclass}`}>
-      <div className="container">
+      <div className="container pt-5 mt-5">
         {/* Section Title */}
         <div className="row">
           <div className="col-12">

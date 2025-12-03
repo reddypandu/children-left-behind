@@ -1,0 +1,41 @@
+.heart{
+    position: relative;
+}
+.heart .pavani-left {
+  position: absolute;
+  left: -80px;
+  bottom: -100px;
+  width: 260px;
+  opacity: 1;
+  z-index: 0;
+}
+
+/* Background Illustration Right */
+.heart .pavani-right {
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  width: 260px;
+  opacity: 1;
+  z-index: 0;
+}
+
+@media (max-width: 992px) {
+  .heart .pavani-title {
+    font-size: 36px;
+  }
+  .heart .pavani-left{
+    display:none;
+  }
+
+  .heart .pavani-description {
+    font-size: 16px;
+  }
+
+  .heart .pavani-left,
+  .heart .pavani-right {
+    width: 180px;
+    opacity: 0.2;
+  }
+}
+

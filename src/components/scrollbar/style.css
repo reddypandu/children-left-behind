@@ -6,7 +6,7 @@ ul.smothscroll {
     z-index: 99;
 }
 ul.smothscroll a {
-    background-color: rgb(8, 204, 127,.7);
+    background-color: #91278f;
     width: 45px;
     height: 45px;
     line-height: 40px;
