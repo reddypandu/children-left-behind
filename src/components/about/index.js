@@ -59,7 +59,7 @@ const About = (props) => {
                         </div>
                     </div>
                       <div className="col-lg-7 col-md-12 colsm-12">
-                        <div className="wpo-about-text text-right">
+                        <div className="wpo-about-text">
                             <div className="wpo-section-title ">
                                 {/* <span>What We Do?</span> */}
                                 <h2>Educating every child with disabilities</h2>
@@ -75,7 +75,7 @@ const About = (props) => {
                 </div>
                     <div className='row py-4'>
                     
-                      <div className="col-lg-7 col-md-12 colsm-12">
+                      <div className="col-lg-7 col-md-12 col-sm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-section-title">
                                 {/* <span>What We Do?</span> */}
