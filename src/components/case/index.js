@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Link} from 'react-router-dom'
 
-import cs1 from '../../images/case/img-1.png'
-import cs2 from '../../images/case/img-2.png'
-import cs3 from '../../images/case/img-3.png'
+import cs1 from '../../images/slider/news1.jpg'
+import cs2 from '../../images/slider/news2.jpg'
+import cs3 from '../../images/slider/news3.jpg'
 
 import './style.css'
 
@@ -61,7 +61,7 @@ class CaseSlide extends Component {
             window.scrollTo(10, 0);
          }
         return (
-          <div className="wpo-case-area section-padding">
+          <div className="wpo-case-area section-padding news-slide-section">
               <div className="container">
                   <div className="row">
                       <div className="col-12">
@@ -79,14 +79,14 @@ class CaseSlide extends Component {
                                     <div className="wpo-case-img">
                                         <img src={cs1} alt=""/>
                                     </div>
-                                    <div className="wpo-case-content">
+                                    {/* <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
                                             <h2>Ensure Education for every poor children</h2>
                                            
                                            
                                         </div>
                                        
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="wpo-case-single">
@@ -94,14 +94,14 @@ class CaseSlide extends Component {
                                     <div className="wpo-case-img">
                                         <img src={cs2} alt=""/>
                                     </div>
-                                    <div className="wpo-case-content">
+                                    {/* <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
                                             <h2>Supply drinking water for the people</h2>
                                             
                                            
                                         </div>
                                        
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="wpo-case-single">
@@ -109,14 +109,14 @@ class CaseSlide extends Component {
                                     <div className="wpo-case-img">
                                         <img src={cs3} alt=""/>
                                     </div>
-                                    <div className="wpo-case-content">
+                                    {/* <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
                                             <h2>Providing Healthy Food for the children</h2>
                                             
                                            
                                         </div>
                                        
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="wpo-case-single">
@@ -124,14 +124,14 @@ class CaseSlide extends Component {
                                     <div className="wpo-case-img">
                                         <img src={cs1} alt=""/>
                                     </div>
-                                    <div className="wpo-case-content">
+                                    {/* <div className="wpo-case-content">
                                         <div className="wpo-case-text-top">
                                             <h2>Ensure Education for every poor children</h2>
                                            
                                            
                                         </div>
                                        
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </Slider>
