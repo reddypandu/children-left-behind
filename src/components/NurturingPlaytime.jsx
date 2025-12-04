@@ -3,7 +3,7 @@ import heroImg from "../images/icons/supporting-disability.png";
 import Header from "../components/header";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
@@ -11,11 +11,11 @@ import Needs from "../components/needs";
 import img1 from "../images/icons/Programs.svg"
 import { useNavigate } from "react-router-dom";
 function NurturingPlaytime() {
-     const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             {/* 🌟 HERO SECTION */}
-             <div className="program-hero">
+            <div className="program-hero">
 
                 {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
                 <div className="program-image-box">
@@ -43,7 +43,7 @@ function NurturingPlaytime() {
 
 
             <div>
-                <p style={{paddingLeft:'50px'}}>
+                <p style={{ paddingLeft: '50px' }}>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                 </p>
             </div>
@@ -65,7 +65,7 @@ function NurturingPlaytime() {
     }
   `}</style>
 
-                 <hr></hr>
+                <hr></hr>
 
                 <div className="scroll-box">
 
@@ -116,15 +116,15 @@ function NurturingPlaytime() {
                 <hr></hr>
 
             </section>
-          
 
 
-          
+
+
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
                 <div className="container">
-                    <h2  style={{ width: "100%", overflow: "hidden", padding: "0px 0", background: "#fff", color:'#1C191E' }} className="sub-title">Nurturing playtime</h2><br></br>
+                    <h2 style={{ width: "100%", overflow: "hidden", padding: "0px 0", background: "#fff", color: '#1C191E' }} className="sub-title">Nurturing playtime</h2><br></br>
                     <p className="description">
                         Before- and after-school programs offer fun activities, educational experiences, and homework help. This programs for school-age children to continue learning outside of school.
                     </p><br></br>
@@ -155,12 +155,15 @@ function NurturingPlaytime() {
                         View Bala-Bata 2016 Jan-Feb brochure
                     </p><br></br>
 
-                    <img style={{ width: '100%' }} src={img} />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <img src={img} />
+                    </div>
+
                 </div> <br></br>
-                  <BlogSection />
-                    <CtaSection ctaclass={'wpo-cta-area-2'} />
-                    <Needs />
-                
+
+                <CtaSection ctaclass={'wpo-cta-area-2'} />
+                <Needs />
+
             </section>
         </>
     );

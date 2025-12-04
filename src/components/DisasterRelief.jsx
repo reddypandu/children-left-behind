@@ -3,7 +3,7 @@ import heroImg from "../images/icons/supporting-disability.png";
 import Header from "../components/header";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
@@ -11,13 +11,13 @@ import Needs from "../components/needs";
 import img1 from "../images/icons/Programs.svg"
 import { useNavigate } from "react-router-dom";
 function DisasterRelief() {
-      const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             {/* 🌟 HERO SECTION */}
 
 
-              <div className="program-hero">
+            <div className="program-hero">
 
                 {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
                 <div className="program-image-box">
@@ -41,13 +41,13 @@ function DisasterRelief() {
 
                 </div>
 
-            </div><br/><br/><br/>
+            </div><br /><br /><br />
 
 
 
 
             <div>
-                <p style={{paddingLeft:'50px'}}>
+                <p style={{ paddingLeft: '50px' }}>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                 </p>
             </div>
@@ -68,8 +68,8 @@ function DisasterRelief() {
     }
   `}</style>
 
-                
-                 <hr></hr>
+
+                <hr></hr>
 
                 <div className="scroll-box">
 
@@ -91,7 +91,7 @@ function DisasterRelief() {
                     <span onClick={() => navigate("/childtraffic")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Act for child protection</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/nurturingplaytime")}  style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Nurturing playtime</span>
+                    <span onClick={() => navigate("/nurturingplaytime")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Nurturing playtime</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/disasterrelief")} style={{
@@ -222,9 +222,12 @@ function DisasterRelief() {
                     <p className="description">
                         Please support the people affected by the floods, for our partners as they work in this remote rural areas in India.
                     </p><br></br>
-                    <img style={{ width: '100%' }} src={img} />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <img src={img} />
+                    </div>
+
                 </div> <br></br>
-                <BlogSection />
+
                 <CtaSection ctaclass={'wpo-cta-area-2'} />
                 <Needs />
 

@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection";
 import CtaSection from "../components/cta";
 import Needs from "../components/needs";
-import img from "../images/icons/Frame 232.png";
+import img from "../images/icons/Union.svg";
 import img1 from "../images/icons/Programs.svg";
 
 function ChildTrafficking() {
@@ -36,10 +36,10 @@ function ChildTrafficking() {
             unable to access the resources they need to flourish.
           </p>
         </div>
-      </div><br/><br/><br/>
+      </div><br /><br /><br />
 
       <div>
-        <p style={{paddingLeft:'50px'}}>
+        <p style={{ paddingLeft: '50px' }}>
           We are committed to educating the families of children with disabilities
           and teaching families how to deal with and care for the child along with
           providing equipment or other essentials to meet the child’s needs. Many
@@ -67,63 +67,63 @@ function ChildTrafficking() {
 
         <hr />
 
-         
-                  <div className="scroll-box">
+
+        <div className="scroll-box">
 
 
-                    <span onClick={() => navigate("/education")} style={{
-                        background: "#F2E5FF",
-                        color: "#7A3CFF",
-                        padding: "6px 12px",
-                        borderRadius: "5px",
-                        cursor: "pointer"
-                    }}>Education</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/education")} style={{
+            background: "#F2E5FF",
+            color: "#7A3CFF",
+            padding: "6px 12px",
+            borderRadius: "5px",
+            cursor: "pointer"
+          }}>Education</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>
-                        Supporting the disabled
-                    </span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>
+            Supporting the disabled
+          </span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/childtraffic")} style={{
-                        background: "#F2E5FF",
-                        color: "#7A3CFF",
-                        padding: "6px 12px",
-                        borderRadius: "5px",
-                        cursor: "pointer"
-                    }}>Act for child protection</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/childtraffic")} style={{
+            background: "#F2E5FF",
+            color: "#7A3CFF",
+            padding: "6px 12px",
+            borderRadius: "5px",
+            cursor: "pointer"
+          }}>Act for child protection</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/nurturingplaytime")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Nurturing playtime</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/nurturingplaytime")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Nurturing playtime</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/disasterrelief")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Disaster relief</span>
+          <span onClick={() => navigate("/disasterrelief")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Disaster relief</span>
 
-                    {/* DUPLICATE FOR INFINITE LOOP */}
-                    <span onClick={() => navigate("/education")} style={{
-                        background: "#F2E5FF",
-                        color: "#7A3CFF",
-                        padding: "6px 12px",
-                        borderRadius: "5px",
-                        cursor: "pointer"
-                    }}>Education</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          {/* DUPLICATE FOR INFINITE LOOP */}
+          <span onClick={() => navigate("/education")} style={{
+            background: "#F2E5FF",
+            color: "#7A3CFF",
+            padding: "6px 12px",
+            borderRadius: "5px",
+            cursor: "pointer"
+          }}>Education</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span  onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
-                    <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
+          <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
+          <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
+          <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
 
-                </div>
+        </div>
 
         <hr />
       </section>
@@ -161,10 +161,13 @@ function ChildTrafficking() {
             Violence against children happens everywhere, every day. To stop it, Children Left Behind fights to return children to civilian life and helps them rebuild their lives; supports safe haven shelters that care for street kids; trains and funds child protection teams to patrol areas where children are trafficked; develops innovative programs like Safe and Friendly Cities and Safe Schools; and supports groundbreaking national surveys to document the prevalence of violence against girls and boys and help governments build better protection systems.
           </p>
 
-          <img style={{ width: "100%" }} src={img} alt="Child Trafficking" />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img src={img} />
+          </div>
+
         </div>
         <br />
-        <BlogSection />
+
         <CtaSection ctaclass={"wpo-cta-area-2"} />
         <Needs />
       </section>

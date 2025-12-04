@@ -4,7 +4,7 @@ import Header from "../components/header";
 import Slider from "react-slick";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import img1 from "../images/icons/Programs.svg"
 import { useNavigate } from "react-router-dom";
 
@@ -14,36 +14,36 @@ import Needs from "../components/needs";
 import { MdMargin } from "react-icons/md";
 function Disability() {
 
-     const navigate = useNavigate();
+    const navigate = useNavigate();
 
- const settings = {
-  infinite: true,
-  speed: 1000,                 // long duration for smooth scroll
-  autoplay: true,
-  autoplaySpeed: 3000,            // required for continuous
-  cssEase: "linear",           // smooth continuous motion
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  variableWidth: true,
-  pauseOnHover: false,         // optional
-  draggable: true,            // optional
-};
+    const settings = {
+        infinite: true,
+        speed: 1000,                 // long duration for smooth scroll
+        autoplay: true,
+        autoplaySpeed: 3000,            // required for continuous
+        cssEase: "linear",           // smooth continuous motion
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        variableWidth: true,
+        pauseOnHover: false,         // optional
+        draggable: true,            // optional
+    };
 
 
-  const items = [
-    { label: "Education", link: "/education" },
-    { label: "Medical campaigns", link: "/medical" },
-    { 
-      label: "Supporting the disabled", 
-      highlight: true 
-    },
-    { label: "Mission to India", link: "/tripofindia" },
-    { label: "Act for child protection", link: "/childtraffic" },
-    { label: "Nurturing playtime", link: "/nurturingplaytime" },
-    { label: "Disaster relief", link: "/disasterrelief" },
-  ];
+    const items = [
+        { label: "Education", link: "/education" },
+        { label: "Medical campaigns", link: "/medical" },
+        {
+            label: "Supporting the disabled",
+            highlight: true
+        },
+        { label: "Mission to India", link: "/tripofindia" },
+        { label: "Act for child protection", link: "/childtraffic" },
+        { label: "Nurturing playtime", link: "/nurturingplaytime" },
+        { label: "Disaster relief", link: "/disasterrelief" },
+    ];
     return (
         <>
             {/* 🌟 HERO SECTION */}
@@ -79,39 +79,39 @@ function Disability() {
             </div><br /><br /><br />
 
             <div>
-                <p style={{paddingLeft:'50px'}}>
+                <p style={{ paddingLeft: '50px' }}>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                 </p>
             </div>
             <section style={{ width: "80%", margin: "0 auto", background: "#fff", padding: "5px 0" }} className="slide-section">
-      <hr />
+                <hr />
 
-      <Slider {...settings}>
-        {items.concat(items).map((item, index) => (
-          <div key={index} style={{ width: "auto" }}>
-            <span
-              onClick={() => item.link && navigate(item.link)}
-              style={{
-                color: item.highlight ? "#7A3CFF" : "#444",
-                background: item.highlight ? "#F2E5FF" : "transparent",
-                padding: item.highlight ? "6px 12px" : "0",
-                borderRadius: "5px",
-                cursor: "pointer",
-                margin: "0 20px",
-                whiteSpace: "nowrap",
-                fontSize: "16px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-              }}
-            >
-              {item.label}
-            </span>
-          </div>
-        ))}
-      </Slider>
+                <Slider {...settings}>
+                    {items.concat(items).map((item, index) => (
+                        <div key={index} style={{ width: "auto" }}>
+                            <span
+                                onClick={() => item.link && navigate(item.link)}
+                                style={{
+                                    color: item.highlight ? "#7A3CFF" : "#444",
+                                    background: item.highlight ? "#F2E5FF" : "transparent",
+                                    padding: item.highlight ? "6px 12px" : "0",
+                                    borderRadius: "5px",
+                                    cursor: "pointer",
+                                    margin: "0 20px",
+                                    whiteSpace: "nowrap",
+                                    fontSize: "16px",
+                                    overflow: "hidden",
+                                    textOverflow: "ellipsis",
+                                }}
+                            >
+                                {item.label}
+                            </span>
+                        </div>
+                    ))}
+                </Slider>
 
-      <hr />
-    </section>
+                <hr />
+            </section>
 
 
 
@@ -192,7 +192,11 @@ function Disability() {
                         * The Child Guidance Center encompasses 14 boarding schools for children with disabilities, providing lodging and meals as well as medical care and education appropriate to the ability of each student. A 15th boarding school is currently under construction. See the Partnerships page for details.
                     </p>
                     <div>
-                        <img style={{ width: '100%' }} src={img} />
+                        {/* <img style={{alignItems:'center'}} src={img} /> */}
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            <img src={img} />
+                        </div>
+
                     </div> <br></br>
 
 
@@ -300,7 +304,7 @@ function Disability() {
                     </p> */}
                 </div>
 
-                <BlogSection />
+
                 <CtaSection ctaclass={'wpo-cta-area-2'} />
                 <Needs />
 

@@ -4,50 +4,50 @@ import Header from "../components/header";
 import { useNavigate } from "react-router-dom";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
 import Needs from "../components/needs";
 import img1 from "../images/icons/Programs.svg"
 function Medicalcampaigns() {
-      const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             {/* 🌟 HERO SECTION */}
-          <div className="program-hero">
-        
-                        {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
-                        <div className="program-image-box">
-                            <img src={img1} alt="hero" className="program-image" />
-                        </div>
-        
-                        {/* LEFT CONTENT on Desktop — BELOW on Mobile */}
-                        <div className="program-content">
-                            <h1 style={{color:'#1C191E'}} className="program-title">
-                                Aims to bridge the <br />
-                                gaps in education and <br />
-                                healthcare
-                            </h1>
-        
-                            <p className="program-desc">
-                                Children Left Behind conceived its goals to meet the pressing
-                                educational and medical needs of children who live without the crucial
-                                anchor of family, as well as those with family or caregivers who are
-                                unable to access the resources they need to flourish.
-                            </p>
-        
-                        </div>
-        
-                    </div><br/><br/><br/>
+            <div className="program-hero">
 
-                       
+                {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
+                <div className="program-image-box">
+                    <img src={img1} alt="hero" className="program-image" />
+                </div>
+
+                {/* LEFT CONTENT on Desktop — BELOW on Mobile */}
+                <div className="program-content">
+                    <h1 style={{ color: '#1C191E' }} className="program-title">
+                        Aims to bridge the <br />
+                        gaps in education and <br />
+                        healthcare
+                    </h1>
+
+                    <p className="program-desc">
+                        Children Left Behind conceived its goals to meet the pressing
+                        educational and medical needs of children who live without the crucial
+                        anchor of family, as well as those with family or caregivers who are
+                        unable to access the resources they need to flourish.
+                    </p>
+
+                </div>
+
+            </div><br /><br /><br />
+
+
             <div>
-                <p style={{paddingLeft:'50px'}}>
+                <p style={{ paddingLeft: '50px' }}>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                 </p>
             </div>
-            <section style={{ width: "100%", overflow: "hidden", paddingTop:'10px', background: "#fff" }}>
+            <section style={{ width: "100%", overflow: "hidden", paddingTop: '10px', background: "#fff" }}>
 
                 {/* animation and keyframes injected inside component */}
                 <style>{`
@@ -63,14 +63,14 @@ function Medicalcampaigns() {
       gap: 20px;
     }
   `}</style>
-                      <hr></hr>
-                  <div className="scroll-box">
+                <hr></hr>
+                <div className="scroll-box">
 
 
                     <span onClick={() => navigate("/education")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Education</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/medical")}  style={{
+                    <span onClick={() => navigate("/medical")} style={{
                         background: "#F2E5FF",
                         color: "#7A3CFF",
                         padding: "6px 12px",
@@ -108,13 +108,13 @@ function Medicalcampaigns() {
                     }}>Medical campaigns</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span  onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
+                    <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
 
                 </div>
-                 <hr></hr>
+                <hr></hr>
 
             </section>
 
@@ -165,12 +165,15 @@ function Medicalcampaigns() {
 
 
 
-                    <img style={{ width: '100%' }} src={img} />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <img src={img} />
+                    </div>
+
                 </div> <br></br>
-                  <BlogSection />
-                    <CtaSection ctaclass={'wpo-cta-area-2'} />
-                    <Needs />
-               
+
+                <CtaSection ctaclass={'wpo-cta-area-2'} />
+                <Needs />
+
             </section>
         </>
     );

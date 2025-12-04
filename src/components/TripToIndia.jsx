@@ -3,7 +3,7 @@ import heroImg from "../images/icons/supporting-disability.png";
 import Header from "../components/header";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
@@ -11,8 +11,8 @@ import Needs from "../components/needs";
 import img1 from "../images/icons/Programs.svg"
 import { useNavigate } from "react-router-dom";
 function TripToIndia() {
-     const navigate = useNavigate();
- 
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="program-hero">
@@ -39,11 +39,11 @@ function TripToIndia() {
 
                 </div>
 
-            </div> <br/><br/><br/>
+            </div> <br /><br /><br />
 
 
             <div style={{}}>
-                <p style={{paddingLeft:'50px'}}>
+                <p style={{ paddingLeft: '50px' }}>
                     We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                 </p>
             </div>
@@ -64,11 +64,11 @@ function TripToIndia() {
     }
   `}</style>
 
-              
-        <hr />
 
-         
-                  <div className="scroll-box">
+                <hr />
+
+
+                <div className="scroll-box">
 
 
                     <span onClick={() => navigate("/education")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Education</span>
@@ -91,7 +91,7 @@ function TripToIndia() {
                     }}>Mission to India</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span onClick={() => navigate("/childtraffic")}  style={{ color: "#444", cursor: "pointer", gap: '12px' }}> Act for child protection</span>
+                    <span onClick={() => navigate("/childtraffic")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}> Act for child protection</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/nurturingplaytime")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Nurturing playtime</span>
@@ -106,7 +106,7 @@ function TripToIndia() {
                     <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span  onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
+                    <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/tripofindia")} style={{
@@ -119,7 +119,7 @@ function TripToIndia() {
 
                 </div>
 
-        <hr />
+                <hr />
 
             </section>
 
@@ -156,9 +156,12 @@ function TripToIndia() {
 
 
 
-                    <img style={{ width: '100%' }} src={img} />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <img src={img} />
+                    </div>
+
                 </div> <br></br>
-                <BlogSection />
+
                 <CtaSection ctaclass={'wpo-cta-area-2'} />
                 <Needs />
 

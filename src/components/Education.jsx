@@ -3,7 +3,7 @@ import heroImg from "../images/icons/supporting-disability.png";
 import Header from "../components/header";
 // import "../css";
 import "../App"
-import img from "../images/icons/Frame 232.png"
+import img from "../images/icons/Union.svg"
 import Footer from "../components/footer";
 import BlogSection from "../components/BlogSection"
 import CtaSection from "../components/cta";
@@ -11,7 +11,7 @@ import Needs from "../components/needs";
 import img1 from "../images/icons/Programs.svg"
 import { useNavigate } from "react-router-dom";
 function Disability() {
-      const navigate = useNavigate();
+    const navigate = useNavigate();
     return (
         <>
             {/* 🌟 HERO SECTION */}
@@ -24,7 +24,7 @@ function Disability() {
 
                 {/* LEFT CONTENT on Desktop — BELOW on Mobile */}
                 <div className="program-content">
-                    <h1 style={{color:'#1C191E'}} className="program-title">
+                    <h1 style={{ color: '#1C191E' }} className="program-title">
                         Aims to bridge the <br />
                         gaps in education and <br />
                         healthcare
@@ -39,10 +39,10 @@ function Disability() {
 
                 </div>
 
-            </div><br/><br/>
-             
-             
-            <p style={{paddingLeft:'50px'}} className="program-desc">We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities</p>
+            </div><br /><br />
+
+
+            <p style={{ paddingLeft: '50px' }} className="program-desc">We are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities</p>
             <section style={{ width: "100%", overflow: "hidden", background: "#fff" }}>
 
                 {/* animation and keyframes injected inside component */}
@@ -58,9 +58,9 @@ function Disability() {
       align-items: center;
       gap: 20px;
     }
-  `}</style> 
-  <hr></hr>
-                  <div className="scroll-box">
+  `}</style>
+                <hr></hr>
+                <div className="scroll-box">
 
 
                     <span onClick={() => navigate("/education")} style={{
@@ -104,16 +104,16 @@ function Disability() {
                     <span onClick={() => navigate("/medical")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Medical campaigns</span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
-                    <span  onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
+                    <span onClick={() => navigate("/disability")} style={{ color: "#444", cursor: "pointer", gap: '12px' }} >Supporting the disabled </span>
                     <span style={{ color: "#ccc", fontSize: "20px", gap: '12px' }}></span>
 
                     <span onClick={() => navigate("/tripofindia")} style={{ color: "#444", cursor: "pointer", gap: '12px' }}>Mission to India</span>
 
                 </div>
-                 <hr></hr>
+                <hr></hr>
 
             </section>
-          
+
 
             {/* 🌟 CONTENT SECTION */}
             <section className="content-section">
@@ -124,7 +124,7 @@ function Disability() {
                         we are committed to educating the families of children with disabilities and teaching families how to deal with and care for the child along with providing equipment or other essentials to meet the child’s needs. Many children have wide-ranging but treatable and often preventable medical problems. Almost none have a formal education, or any prospect of vocational opportunities.
                     </p> */}
 
-                  
+
 
                     <h2 style={{ fontWeight: '600', fontSize: '32px', lineHeight: '40px', letterSpacing: '2%' }} className="sub-title">Educational Outreach</h2><br></br>
                     <p className="description">
@@ -133,11 +133,14 @@ function Disability() {
                         We are seeing how the promise and hope for a better future through education is becoming a reality as we work with at-risk children in the United States and developing world nations. We believe in the value of education to “open doors” for a new way of life for children and youth all around the globe.<br></br><br></br>
                         Every day men, women, and children are trafficked for sex, or forced into labor and/or begging worldwide. Their hearts are crying out for rescue from poverty, abuse and bondage. Children Left Behind is committed to respond to their cry and be an advocate for this very real need. You too, can be a part of the transformation that education provides in a child’s life by giving them a fresh start and a confident hope for a better future! Join us in being a part of the solution
                     </p>
-                    <img style={{ width: '100%' }} src={img} />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <img src={img} />
+                    </div>
+
 
 
                 </div> <br></br>
-                <BlogSection />
+
                 <CtaSection ctaclass={'wpo-cta-area-2'} />
                 <Needs />
 
