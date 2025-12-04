@@ -120,7 +120,7 @@
 }
 
 .case-btn ul li:last-child a {
-  background-image: linear-gradient(to right, #00a7d5, #27cdca);
+  background-image: linear-gradient(to right, #91278f, #27cdca);
   color: #fff;
 }
 
@@ -210,17 +210,17 @@
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
-    border:1px solid #00a7d5;
-    color: #00a7d5;
+    border:1px solid #91278f;
+    color: #91278f;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-    background-image: linear-gradient(to right, #00a7d5, #27cdca);
+    background-image: linear-gradient(to right, #91278f, #91278f);
 }
 .slick-prev:focus,
 .slick-next:focus {
-    background-image: linear-gradient(to right, #00a7d5, #27cdca);
+    background-image: linear-gradient(to right, #91278f, #91278f);
 }
 
 .slick-prev:hover:before,
@@ -248,7 +248,7 @@
     font-family: "themify";
     content: "\e629";
     opacity: 1;
-    color: #00a7d5;
+    color: #91278f;
 }
 
 .slick-next {
@@ -259,7 +259,7 @@
     font-family: "themify";
     content: "\e628";
     opacity: 1;
-    color: #00a7d5;
+    color: #91278f;
 }
 
 .hero:hover .slick-prev {

@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
 // Images
-import Img1 from "../../images/about1.png";
-import Img2 from "../../images/about4.png";
-import Img3 from "../../images/about5.png";
-import Img4 from "../../images/about6.png";
+import Img1 from "../../images/slider/gallery1.jpg";
+import Img2 from "../../images/slider/gallery2.jpg";
+import Img3 from "../../images/slider/gallery3.jpg";
+import Img4 from "../../images/slider/gallery4.jpg";
 
 class TiltCarousel extends Component {
   // const TiltCarousel = () => {

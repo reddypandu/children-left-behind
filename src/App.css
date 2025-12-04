@@ -6,7 +6,16 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.slide-section .slick-next,
+.slide-section .slick-prev{
+  
+}
+.slide-section .slick-next{
+  right: -40px;
+}
+.slide-section .slick-prev{
+  left: -40px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

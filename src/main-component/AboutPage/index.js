@@ -34,10 +34,10 @@ const CasePage = () => {
             <AboutMission subclass={'section-padding'} />
             <OurMission />
             <LeaderShip />
+                        <Howworks />
             <ValuesSection />
-            <Howworks />
             <Mission subclass={'section-padding'} />
-            <BlogSection />
+            {/* <BlogSection /> */}
             <CtaSection ctaclass={'wpo-cta-area-2'} />
             <Needs />
 

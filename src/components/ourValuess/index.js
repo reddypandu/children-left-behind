@@ -24,20 +24,15 @@ const ValuesSection = () => {
                     </p>
 
                     {/* Image */}
-                    <div className="mt-4">
-                        <img
-                            src={ValuesImage}
-                            alt="Children reading"
-                            className="img-fluid rounded shadow"
-                        />
-                    </div>
+                  
                 </div>
 
                 {/* RIGHT COLUMN – LIST OF VALUES */}
-                <div className="col-lg-6 right-values">
-
+                <div className="col-lg-12 right-values">
+<div className="row">
+<div className="col-md-4">
                     {/* VALUE ITEM */}
-                    <div className="d-flex mb-4">
+                    <div className="d-flex mb-2">
                         <div style={{ color: "#832AD1" }} className="value-number me-3">1</div>
                         <div>
                             <h5 className="fw-bold mb-1">Compassion</h5>
@@ -48,9 +43,10 @@ const ValuesSection = () => {
                             </p>
                         </div>
                     </div>
-
+</div>
+<div className="col-md-4">
                     {/* VALUE ITEM */}
-                    <div className="d-flex mb-4">
+                    <div className="d-flex mb-2">
                         <div style={{ color: "#832AD1" }} className="value-number me-3">2</div>
                         <div>
                             <h5 className="fw-bold mb-1">Empowerment</h5>
@@ -61,9 +57,10 @@ const ValuesSection = () => {
                             </p>
                         </div>
                     </div>
-
+</div>
+<div className="col-md-4">
                     {/* VALUE ITEM */}
-                    <div className="d-flex mb-4">
+                    <div className="d-flex mb-2">
                         <div style={{ color: "#832AD1" }} className="value-number me-3">3</div>
                         <div>
                             <h5 className="fw-bold mb-1">Inclusivity</h5>
@@ -74,7 +71,8 @@ const ValuesSection = () => {
                             </p>
                         </div>
                     </div>
-
+</div>
+<div className="col-md-4">
                     {/* VALUE ITEM */}
                     <div className="d-flex mb-4">
                         <div style={{ color: "#832AD1" }} className="value-number me-3">4</div>
@@ -87,9 +85,9 @@ const ValuesSection = () => {
                             </p>
                         </div>
                     </div>
-
+</div><div className="col-md-4">
                     {/* VALUE ITEM */}
-                    <div className="d-flex mb-4">
+                    <div className="d-flex mb-2">
                         <div style={{ color: "#832AD1" }} className="value-number me-3">
                             5
                         </div>
@@ -102,7 +100,8 @@ const ValuesSection = () => {
                             </p>
                         </div>
                     </div>
-
+</div>
+</div>
                 </div>
             </div>
 

@@ -10,7 +10,12 @@
   height: 5px!important;
   overflow: unset!important;
 }
-
+.news-slide-section .slick-next{
+  right: -40px;
+}
+.news-slide-section .slick-prev{
+  left: -40px;
+}
 .progress .progress-bar {
   border-radius: 15px;
   box-shadow: none;

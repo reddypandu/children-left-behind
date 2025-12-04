@@ -2,6 +2,7 @@ import React from "react";
 import Values from "../../images/about/our-values.png"
 import "./style.css"; // <-- make sure to create this file
 
+
 const ourMission = () => {
   return (
     <section className="values-section">
