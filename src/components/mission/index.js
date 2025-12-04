@@ -82,13 +82,13 @@ const Mission = (props) => {
             <div className="col-lg-6">
               <Slider {...settings}>
                 <div>
-                  <img style={{borderRadius: "12px"}} src={img1} className="carousel-img w-100" alt="" />
+                  <img style={{ borderRadius: "12px" }} src={img1} className="carousel-img w-100" alt="" />
                 </div>
                 <div>
-                  <img style={{borderRadius: "12px"}} src={img2} className="carousel-img w-100" alt="" />
+                  <img style={{ borderRadius: "12px" }} src={img2} className="carousel-img w-100" alt="" />
                 </div>
                 <div>
-                  <img style={{borderRadius: "12px"}} src={img3} className="carousel-img w-100" alt="" />
+                  <img style={{ borderRadius: "12px" }} src={img3} className="carousel-img w-100" alt="" />
                 </div>
               </Slider>
             </div>
@@ -97,10 +97,7 @@ const Mission = (props) => {
             <div className="col-12">
               <div className="wpo-mission-item">
                 <p>
-                  The Child Guidance Center operates 14 boarding schools for
-                  children with disabilities, offering housing, education, and
-                  medical support. A 15th school is currently under
-                  construction.
+                  The Child Guidance Center encompasses 14 boarding schools* for children with disabilities, providing lodging <br/> and meals as well as medical care and education appropriate to the ability of each student. A 15th boarding <br/>school is currently under construction
                 </p>
               </div>
             </div>

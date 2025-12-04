@@ -284,7 +284,7 @@ function ChildCenter() {
                 </div>
 
             </section>
-            <BlogSection />
+          
             <CtaSection ctaclass={'wpo-cta-area-2'} />
             <Needs />
         </>

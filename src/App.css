@@ -327,3 +327,41 @@ line-height: 36px !important;
 letter-spacing: 2% !important;
 font-family: 'Awesome Serif'!important;
 }
+
+.stats-container {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.icon-btn {
+    padding: 6px 14px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    border-radius: 6px;
+    border: 2px solid #832AD1;
+    background: transparent;
+    cursor: pointer;
+}
+
+.img-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #832AD1;
+    white-space: nowrap;
+}
+

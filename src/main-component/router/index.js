@@ -41,6 +41,8 @@ import Footer from '../../components/footer';
 import Resources from '../../components/Resources';
 import USPrivacyPolicy from '../../components/USPrivacyPolicy';
 import FinanciaiAccountability from '../FinancialAccountability';
+import OurPartners from '../../components/OurPartners';
+import GetInvolved from '../../components/GetInvolved';
 
 
 const AllRoute = () => {
@@ -91,6 +93,8 @@ const AllRoute = () => {
           {/* <Route path='/usprivacypolicy' element={<Us />}></Route> */}
            <Route path='/usprivacypolicy' element={<USPrivacyPolicy />}></Route>
            <Route path='/financiaiaccountability' element={<FinanciaiAccountability/>}></Route>
+           <Route path="/ourpartners" element={<OurPartners/>}></Route>
+           <Route path='/getinvolved' element={<GetInvolved/>}></Route>
 
         </Routes>
         <Footer />

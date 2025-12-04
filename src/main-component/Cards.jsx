@@ -158,7 +158,7 @@ function Cards() {
                     </div>
                 </div>
             </section>
-            <BlogSection />
+            {/* <BlogSection /> */}
             <CtaSection ctaclass={'wpo-cta-area-2'} />
             <Needs />
            

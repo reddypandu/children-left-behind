@@ -114,7 +114,7 @@ const ResourcesPage = () => {
                 </div>
 
             </div>
-            <BlogSection />
+            {/* <BlogSection /> */}
             <Needs />
         </>
     );
