@@ -5,7 +5,7 @@ import imgHero from "../../images/about/About.png"
 const AboutHero = () => {
     return (
         <section className="wpo-about-area">
-            <div className="container">
+            <div className="container  ourmissionn">
                 <div className="row align-items-center">
                     <div className="col-md-6">
                         <h2 className="wpo-section-title about">Together, let’s build a better future</h2>
