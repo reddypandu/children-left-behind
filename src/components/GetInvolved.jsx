@@ -94,7 +94,7 @@ function GetInvolved() {
 
 
                 </div> <br></br>
-                <BlogSection />
+                {/* <BlogSection /> */}
                 <CtaSection ctaclass={'wpo-cta-area-2'} />
                 <Needs />
 
