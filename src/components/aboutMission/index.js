@@ -20,7 +20,7 @@ const Mission = (props) => {
                 <div className="wpo-mission-wrap">
                     <div className="row align-items-center">
                         <div className='col-lg-12 text-center'>
-                            <h2 className='Remodeling'>Remodeling a world where</h2>
+                            <h2 className='Remodeling text-muted'>Remodeling a world where</h2>
                         </div>
                         <div className='col-lg-3'>
                             <div  style={{ borderRadius: "8px", border: "2px solid #6817AE",}} className="wpo-mission-content">

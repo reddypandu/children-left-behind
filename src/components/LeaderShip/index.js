@@ -33,6 +33,12 @@ const TeamSection = () => {
                         underserved children and co-founded Children Left Behind to ensure every
                         child has the opportunity to thrive.
                     </p>
+                    <p className="text-muted">
+                      It is Oswald’s desire to help underprivileged and orphaned children to have the same opportunities he had. He co-founded Children Left Behind to partner and work with his childhood friend and classmate Frank Viswanath to provide an environment where children’s educational, medical, and living needs can be provided for.
+                    </p>
+                    <p className="text-muted">
+                      He passionately believes every child should have the chance to fulfill their potential. It’s simply not right that children suffer neglect or abuse, or are held back because of disadvantage.
+                    </p>
                 </div>
 
                 <hr />
@@ -52,6 +58,12 @@ const TeamSection = () => {
                         Frank is committed to helping children with disabilities and impoverished
                         families. With years of international service, he leads missions to provide
                         food, education, shelter, and medical care for vulnerable children.
+                    </p>
+                    <p className="text-muted">
+                      As International Director, Frank’s duties are to oversee both U.S. and overseas operations, which include fund raising and program development. Frank has been helping children and families affected by hunger, disabilities, and homelessness for over 20 years and has made this a priority for the organization.
+                    </p>
+                    <p className="text-muted">
+                      Frank has pioneered several projects over the years and has produced remarkable results. Frank travels internationally and raises funds to support children in desperate need.
                     </p>
                 </div>
 
@@ -73,6 +85,12 @@ const TeamSection = () => {
                         Children Left Behind by organizing medical care, fundraising programs, and
                         outreach initiatives. Her work helps children receive essential support
                         and love.
+                    </p>
+                    <p className="text-muted">
+                      Amy initiates and organizes meetings and events to help raise funding and project support. She also directs fundraising, communications and policy. 
+                    </p>
+                    <p className="text-muted">
+                      Amy also helps coordinate volunteers and interns to travel to India, providing a life changing experience in serving and helping children in need.
                     </p>
                 </div>
 
@@ -109,11 +127,11 @@ const TeamSection = () => {
     borderRadius: "6px",
     padding: "20px",
   }}
-  className="text-center mt-5 col-md-6 mx-auto"
+  className="text-center mt-5 col-md-8 mx-auto"
 >
-  <h2 className="fw-semibold mb-4 sponsorcars">
+  <h3 className="fw-semibold mb-4 sponsorcars">
     Want to be a part of our Volunteer / Sponsor Program?
-  </h2>
+  </h3>
 
   <p className="text-muted mb-3">
     We're always excited to welcome people who want to help bring positive
