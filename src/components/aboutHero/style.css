@@ -6,3 +6,34 @@
 .ourmissionn{
      background: linear-gradient(180deg, #FFFFFF 0%, #FAF0FF 100%);
 }
+.about-page-hero{
+    padding: 170px 0;
+}
+.about-page-hero .container{
+    position: relative;
+}
+.about-page-hero .container .img{
+    position: absolute;
+    right: -10%;
+}
+@media(max-width:992px){
+    .about-page-hero{
+        padding-top: 250px;
+        padding-bottom: 0;
+    }
+    .about-page-hero .container .img{
+/* position: static; */
+bottom: 0%;
+
+}
+}
+@media(max-width:768px){
+    .about-page-hero{
+        padding-top: 350px;
+        padding-bottom: 0;
+    }
+    .about-page-hero .container .img{
+/* position: static; */
+top: -100%;
+}
+}
