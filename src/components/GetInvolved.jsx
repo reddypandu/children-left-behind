@@ -16,6 +16,12 @@ import ind from "../images/icons/Frame 242.png";
 import emp from "../images/icons/Frame 242-1.png";
 import Slider from "react-slick";
 import img2 from "../images/icons/Vector.png";
+import w1 from "../images/icons/Workplace.svg";
+import w2 from "../images/icons/Fund.svg";
+import w3 from "../images/icons/Marketing.svg"
+import v1 from "../images/icons/email.svg";
+import v2 from "../images/icons/mic.png";
+import v3 from "../images/icons/host.svg"
 
 function GetInvolved() {
   const navigate = useNavigate();
@@ -33,6 +39,9 @@ function GetInvolved() {
   };
 
   const tags = ["Sponsoring a Child", "Sending a Child to School"];
+  const ontime = ["Make a Difference Today", "Occasion Specific Giving"];
+  const gift = ["Gift Through Will", "Gifts Outside Will", "Gifts Now"]
+  const Volunteering = ["Mission To India", "Medical Mission", "Educational Outreach Programs"]
 
   const categories = [
     { name: "Sponsorship", special: true },
@@ -43,9 +52,34 @@ function GetInvolved() {
     { name: "Awareness Programs", link: "/nurturingplaytime" },
   ];
 
+  const data = [
+    {
+      img: w1,
+      title: "Workplace Giving",
+      desc: `Workplace giving is a simple yet powerful way for employees 
+      to assist children through the delivery of essential equipment 
+      and services to individual kids and organizations.`,
+    },
+    {
+      img: w2,
+      title: "Corporate Fund-raising",
+      desc: `Fundraising materials, business supplies, supporter training, 
+      and sponsorship of high-profile events helps you reach new audiences 
+      and increase brand equity.`,
+    },
+    {
+      img: w3,
+      title: "Cause-related Marketing",
+      desc: `Partnership between company objectives and our mission delivers 
+      real impact to children while engaging staff and customers.`,
+    },
+  ];
+
+
+
   return (
     <>
-      
+
       {/* 🌟 HERO SECTION */}
       <div className="program-hero">
         <div className="program-image-box">
@@ -302,8 +336,8 @@ function GetInvolved() {
             support makes to a child and their family cannot be overstated. Individuals
             and companies can help children by supporting or partnering with Children
             Left Behind.
-          </p><br/><br/>
-           <h2
+          </p><br /><br />
+          <h2
             style={{
               fontWeight: "600",
               fontSize: "32px",
@@ -312,17 +346,365 @@ function GetInvolved() {
             }}
             className="sub-title"
           >
-            Helping a Child
-          </h2><br/>
-           <h3 className="corporate-des">
-            We are seeing how the promise and hope for a better future through
-            education is becoming a reality as we work with at-risk children in the
-            United States and developing world nations. We believe in the value of
-            education to “open doors” for a new way of life for children and youth
-            all around the globe.
-            <br /></h3>
+            Corporate Partnership
+          </h2>
+          <h2 className="corporate-des">
+            Ranging from corporate volunteering at a local level, workplace giving<br /> programs to multi-faceted sponsor and partner programs. Here are some<br /> ways your company can be involved
+            <br /></h2><br />
 
-         
+          <div>
+            <button
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                borderRadius: "8px",
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#832AD1",
+                backgroundColor: "#F8F0FF",
+                cursor: "pointer",
+                opacity: 1,
+                fontFamily: "Work Sans",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "18px",
+                textAlign: "center",
+                color: "#832AD1",
+                width: '200px',
+                height: '36px'
+              }}
+            >
+              Get in Touch
+            </button>
+          </div>
+
+
+          <div className="three-sections">
+
+            {/* Box 1 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-one"
+                src={w1}
+                alt="Workplace Giving"
+              /><br /><br />
+              <h3>Workplace Giving</h3><br />
+              <p>
+                Workplace giving is a simple yet powerful way for employees to assist children through the delivery of essential equipment and services to individual kids and children’s organizations. Once established, workplace giving provides the company, employees and Children Left Behind a low-cost, low-maintenance way to support children
+              </p>
+            </div>
+
+            {/* Box 2 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-two"
+                src={w2}
+                alt="Corporate Fund-raising"
+              /><br /><br />
+              <h3>Corporate Fund-raising</h3><br />
+              <p>
+                fundraising materials, staff and supporter training, business supplies, advertising and marketing through to sponsoring one of Children Left Behind’s high profile events or iconic corporate functions. Sponsorship delivers a positive image to your company, helps you reach a new audience, increases brand awareness, motivates staff and customers and grows your brand equity.
+              </p>
+            </div>
+
+            {/* Box 3 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-three"
+                src={w3}
+                alt="Cause-related Marketing"
+              /><br /><br />
+              <h3>Cause-related Marketing</h3><br />
+              <p>
+                Bringing marketing objectives of a company and the objectives of Children Left Behind to form a mutually beneficial partnership. This partnerships provide a unique selling point, engage staff and customers and brand equity while delivering a very real difference to children in your community.
+              </p>
+            </div>
+          </div><br />
+
+          <h2
+            style={{
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "40px",
+              letterSpacing: "2%",
+            }}
+            className="sub-title"
+          >
+            One-Time Giving
+          </h2>
+
+          <div className="d-flex flex-wrap mt-4 gap-2">
+            {ontime.map((item, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 small d-flex align-items-center"
+                style={{
+                  fontSize: "12px",
+                  border: "2px solid #7D7188 ",
+                  borderRadius: "5px",
+                  gap: "6px",
+                  color: "#7D7188",
+                }}
+              >
+                <img
+                  src={img2}
+                  alt="check"
+                  style={{ width: "14px", height: "14px", objectFit: "contain" }}
+                />
+                {item}
+              </span>
+            ))}
+          </div><br />
+          <p>One-Time giving is a way to help children in the partnering organizations through single donation. This option entails not only for the make a difference aspect but as well for the event based, where your funds are offered on your special occasions like birthday or In the loving memory of your family member or any other events</p><br />
+
+          <div>
+            <button
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                borderRadius: "8px",
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#832AD1",
+                backgroundColor: "#F8F0FF",
+                cursor: "pointer",
+                opacity: 1,
+                fontFamily: "Work Sans",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "18px",
+                textAlign: "center",
+                color: "#832AD1",
+                width: '200px',
+                height: '36px'
+              }}
+            >
+              Donate now
+            </button>
+          </div><br /><br />
+          <h2
+            style={{
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "40px",
+              letterSpacing: "2%",
+            }}
+            className="sub-title"
+          >
+            Legacy Giving
+          </h2>
+
+          <div className="d-flex flex-wrap mt-4 gap-2">
+            {gift.map((item, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 small d-flex align-items-center"
+                style={{
+                  // backgroundColor:'#F8F0FF',
+                  fontSize: "12px",
+                  border: "1px solid #832AD1 ",
+                  borderRadius: "5px",
+                  gap: "6px",
+                  color: "#7D7188",
+                }}
+              >
+                <img
+                  src={img2}
+                  alt="check"
+                  style={{ width: "14px", height: "14px", objectFit: "contain" }}
+                />
+                {item}
+              </span>
+            ))}
+          </div><br />
+          <div>
+            <button
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                borderRadius: "8px",
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#832AD1",
+                backgroundColor: "#F8F0FF",
+                cursor: "pointer",
+                opacity: 1,
+                fontFamily: "Work Sans",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "18px",
+                textAlign: "center",
+                color: "#832AD1",
+                width: '200px',
+                height: '36px'
+              }}
+            >
+              Get in Touch
+            </button>
+          </div><br />
+
+          <p>Gifts and services in-kind are a vital element in enabling Children Left Behind to meet its vision and mission. Gifts of auction and raffle prizes for events, business skills such as legal or accountancy advice or technology and office items are all necessary to successfully deliver Children Left Behind’s vision and mission</p><br />
+          <p>By making charitable bequests or other “planned gifts,” you can leave an important legacy of caring that endures. Many people choose to leave a charity in their will because they want to support important causes. There are many of advantages to making a legacy gift to the Children Left Behind. Your gift will provide a child in need with food, a home, healthcare, education and a chance to succeed that would not be available to them with our your gift. While your gift may be measured in dollars, your impact on a child’s life is priceless. All gifts are tax deductible</p>
+          <p>Different gifts may benefit you in different ways. Find the perfect charitable bequest plan that meets your financial needs and fulfills your charitable interests:</p>
+          <li>Gifts Through Your Will – Remembering the Children Left Behind in your will can help you reduce estate taxes and ensure the work you care about will always continue.</li><br />
+          <li>Gifts Outside Your Will – Help our mission even faster by making a gift that avoids probate. Just name the Children Left Behind as beneficiary on appreciated securities, retirement plans, insurance policies or real estate</li><br />
+          <li>Gifts Now – Save on your current income taxes, and possibly reduce or eliminate estate tax and probate expenses when you make a gift to the Children Left Behind today.</li><br /><br />
+          <h2
+            style={{
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "40px",
+              letterSpacing: "2%",
+            }}
+            className="sub-title"
+          >
+            Volunteering
+          </h2>
+
+          <div className="d-flex flex-wrap mt-4 gap-2">
+            {Volunteering.map((item, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 small d-flex align-items-center"
+                style={{
+                  // backgroundColor:'#F8F0FF',
+                  fontSize: "12px",
+                  border: "1px solid #7D7188",
+                  borderRadius: "5px",
+                  gap: "6px",
+                  color: "#7D7188",
+                }}
+              >
+                <img
+                  src={img2}
+                  alt="check"
+                  style={{ width: "14px", height: "14px", objectFit: "contain" }}
+                />
+                {item}
+              </span>
+            ))}
+          </div><br />
+
+          <p>
+            Most often children are exploited because their families are poor and without education.<br /><br />
+
+            Many of these families do not value education or see a need to educate their children. If the child is in school, they can’t be on the streets working to make money for the family. Our team works with established non-government organizations (NGOs) already working in these areas with local families to try to get them to enroll their children in school. We work hand-in-hand with these organizations to provide academic programming, on-site training, and reading, writing and math camps to educate these at-risk children, many of whom are unschooled, to help prepare them to enter a school setting successfully.<br /><br />
+
+            If you are interested in supporting our Educational Outreach Program for a one-time donation or partnering with us monthly, donations can be sent to Children Left Behind, a registered U.S non-profit organization. Donations are eligible to receive a tax deduction and can be made by credit card or check.
+
+          </p>
+
+          <div>
+            <button
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                borderRadius: "8px",
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#832AD1",
+                backgroundColor: "#F8F0FF",
+                cursor: "pointer",
+                opacity: 1,
+                fontFamily: "Work Sans",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "18px",
+                textAlign: "center",
+                color: "#832AD1",
+                width: '200px',
+                height: '36px'
+              }}
+            >
+              Get in Touch
+            </button>
+          </div><br /><br />
+
+          <h2
+            style={{
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "40px",
+              letterSpacing: "2%",
+            }}
+            className="sub-title"
+          >
+            Bring Awareness to the Cause
+          </h2><br />
+
+
+          <div>
+            <button
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                borderRadius: "8px",
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#832AD1",
+                backgroundColor: "#F8F0FF",
+                cursor: "pointer",
+                opacity: 1,
+                fontFamily: "Work Sans",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "18px",
+                textAlign: "center",
+                color: "#832AD1",
+                width: '200px',
+                height: '36px'
+              }}
+            >
+              Get in Touch
+            </button>
+          </div>
+
+
+          <div className="three-sections">
+
+            {/* Box 1 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-one"
+                src={v1}
+                alt="Workplace Giving"
+              /><br /><br />
+              <h3>Invite</h3><br />
+              <p>
+                If you would like to invite one of our Children Left Behind board members to speak to your group about the Children’s Homes, issues. We have board members in the United States, all of whom have firsthand experience with visiting India and staying at the Children’s Homes.<br /><br />
+
+                If time schedules permit, and you are near these areas, we may be able to speak at your event!
+              </p>
+            </div>
+
+            {/* Box 2 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-two"
+                src={v2}
+                alt="Corporate Fund-raising"
+              /><br /><br />
+              <h3>Spread the word</h3><br />
+              <p>
+                We would love for you to tell your friends about what we’re doing at Children Left Behind. Spread the word through social media outlets, talk to your class about it, and continue to stay informed about what we’re up to in India.
+              </p>
+            </div>
+
+            {/* Box 3 */}
+            <div className="section-box">
+              <img style={{ height: '130px' }}
+                className="img-three"
+                src={v3}
+                alt="Cause-related Marketing"
+              /><br /><br />
+              <h3>Event Host</h3><br />
+              <p>
+                To raise funds and/or awareness about the Children’s Homes. Raising support for a specific project occurring at the homes, raising awareness about children that still need sponsors, or creating your own event to inform people about our organization are all ways that you can get involved with hosting.
+              </p>
+            </div>
+          </div><br />
+
+
 
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img src={img} alt="banner" style={{ width: "100%" }} />
@@ -333,7 +715,7 @@ function GetInvolved() {
         <Needs />
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

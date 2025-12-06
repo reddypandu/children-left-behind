@@ -725,3 +725,37 @@ h5{
 .info-section {
   margin-top: 20px;
 }
+
+
+.three-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.section-box {
+  width: 30%;
+  text-align: center;
+}
+
+.section-box h3 {
+  font-family: "Awesome Serif", serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #2E2E2E;
+}
+
+.section-box p {
+  font-family: "Work Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0%;
+  text-align: center !important;
+  color: #7D7188 !important;
+}

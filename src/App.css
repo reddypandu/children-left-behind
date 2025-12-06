@@ -658,3 +658,12 @@ h2 {
     100% { transform: translateX(-50%); }
   }
 }
+
+.corporate-des , h2{
+  /* font-family: "Awesome Serif", serif !important; */
+  font-weight: 500 !important;                      /* Medium weight */
+  font-size: 20px !important;                       /* Figma px → CSS px */
+  line-height: 28px !important;                     /* Figma line-height */
+  letter-spacing: 0.02em !important;                /* 2% → 0.02em */
+  color: #7D7188 !important;                        /* Text color */
+}
