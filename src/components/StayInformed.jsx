@@ -169,14 +169,14 @@ function StayInformed() {
 
   <div className="scroll-wrapper">
     <div className="stats-row">
-      <p>Stats of India</p>
-      <p>Facts on Children in India</p>
-      <p>Hard truths about poverty in India</p>
+      <p onClick={() => navigate('/statsofindia')}>Stats of India</p>
+      <p onClick={() => navigate('/factonchildren')}>Facts on Children in India</p>
+      <p onClick={() => navigate('/povertyinindia')}>Hard truths about poverty in India</p>
 
       {/* Duplicate for smooth continuous scroll */}
-      <p>Stats of India</p>
-      <p>Facts on Children in India</p>
-      <p>Hard truths about poverty in India</p>
+      <p onClick={() => navigate('/statsofindia')}>Stats of India</p>
+      <p onClick={() => navigate('/factonchildren')}>Facts on Children in India</p>
+      <p onClick={() => navigate('/povertyinindia')}>Hard truths about poverty in India</p>
     </div>
   </div>
 
