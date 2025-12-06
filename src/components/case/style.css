@@ -131,7 +131,9 @@
 }
 
 .wpo-case-img img {
-  width: 100%;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .wpo-case-item {

@@ -39,7 +39,7 @@ const About = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-lg-6 col-md-12 text-center">
+          <div className="col-lg-6 col-md-12 text-center needs-img">
             <img src={toyImg} className="toy-img" alt="toys illustration" />
           </div>
         </div>

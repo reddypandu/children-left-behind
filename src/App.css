@@ -516,7 +516,7 @@ h2 {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: #E3C3FF !important;
+
 }
 
 .three-boxes p {
@@ -524,6 +524,7 @@ h2 {
   flex: 1;
   font-size: 16px !important;
   line-height: 24px !important;
+  opacity: 0.8;
 }
 
 @media (max-width:768px) {

@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 200px;
   padding-bottom: 60px;
-  background: #fbf7ff;
+  /* background: #fbf7ff; */
 }
 
 
@@ -35,19 +35,23 @@
 
 /* BUTTONS */
 .needs-btns .btn {
-  padding: 10px 22px;
+  padding: 10px 16px;
   border-radius: 6px;
-  font-weight: 600;
-  border: 2px solid #8a3deb;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid #8a3deb;
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .btn-learn {
-  background: #b46fb238 !important;
+  background: #F8F0FF !important;
   color: #5a1b8f;
 }
 .container.needs{
-   background: linear-gradient(to bottom, #9c6bd709 0%, #872af81e 50%,#872af800 100%);
+   background: linear-gradient(180deg, #FFFFFF 0%, #FAF0FF 113.29%);
+/* linear-gradient(180deg, color(display-p3 1.000 1.000 1.000) 0%, color(display-p3 0.973 0.941 1.000) 113.29%); */
+
 }
 .btn-join {
   background: #862af8 !important;
@@ -59,11 +63,19 @@
   /* width: 420px; */
   /* margin-top: 20px; */
 }
-
+.needs .needs-img{
+  position: relative;
+}
+.needs .needs-img img{
+  position: absolute;
+  top:-150px;
+  right:-10%;
+}
 .dino-icon {
   width: 120px;
   margin-top: 40px;
   opacity: 0.8;
+  margin-left:-40px;
 }
 
 /* Responsive */
@@ -73,7 +85,13 @@
   .toy-img {
     /* width: 300px; */
   }
-
+.needs{
+  height: 500px;
+}
+.needs .needs-img img{
+  position: absolute;
+  top:-120px;
+}
   .needs-wrapper {
     padding-top: 200px;
   }

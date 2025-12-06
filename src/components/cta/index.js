@@ -7,16 +7,18 @@ const CtaSection = (props) => {
         window.scrollTo(10, 0);
      }
     return(
-        <div className={`wpo-cta-area ${props.ctaclass}`}>
+        <div className={`wpo-cta-area cta ${props.ctaclass}`}>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-lg-4">
                         <div className="wpo-cta-text">
                             <h2 className='text-white'>Lets build a 
 Safe Space together!</h2>
-                            <p className='text-white'>Follow us on youtube for more live content</p>
+                            <p className='text-white mb-1'>Follow us on youtube for more live content</p>
                             <div className="btns">
-                                <Link onClick={ClickHandler} to="/donate" className="theme-btn">View Media</Link>
+                                <Link onClick={ClickHandler} to="/donate" className="theme-btn">
+                                     View Media <i class="fas fa-external-link-alt"></i>
+                                </Link>
                             </div>
                         </div>
                     </div>
