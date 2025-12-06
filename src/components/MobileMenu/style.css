@@ -101,13 +101,14 @@
         width: 35px;
         height: 35px;
         text-align: center;
-        background: #832AD1;
-        line-height: 50px;
+        background: #F8F0FF;
+        line-height: 47px;
         border-radius: 5px;
     }
 
     .showmenu i {
         font-size: 25px;
+        color: #8C2AE8;
     }
 
     .mobileMenu {

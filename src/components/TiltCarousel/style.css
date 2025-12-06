@@ -23,11 +23,11 @@
 
 /* SAME ROTATION AS YOUR SAMPLE */
 .rotate-1 img {
-  transform: rotate(-6deg);
+  transform: rotate(5deg);
 }
 
 .rotate-2 img {
-  transform: rotate(3deg);
+  transform: rotate(-5deg);
 }
 
 .rotate-3 img {
@@ -40,7 +40,7 @@
 
 /* SPACE BETWEEN SLIDES */
 .tilt-wrapper .slick-slide {
-  margin: 0 12px;
+  padding: 0px 12px;
   /* Adjust space as you like (left+right) */
 }
 
@@ -50,21 +50,11 @@
 }
 
 @media(max-width:992px) {
-  .rotate-1 img {
-    transform: unset;
-  }
+ 
+.tilt-wrapper img{
+  height:300px;
+}
 
-  .rotate-2 img {
-    transform: unset;
-  }
-
-  .rotate-3 img {
-    transform: unset;
-  }
-
-  .rotate-4 img {
-    transform: unset;
-  }
   .tilt-card{
     height: auto;
   }

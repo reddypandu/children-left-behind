@@ -20,7 +20,7 @@ const Footer = (props) => {
             {/* <Newsletter/> */}
             <div className="wpo-upper-footer">
                 <div className="container">
-                    <div className="row">
+                    <div className="row pb-5 mb-4">
                         <div className='col-md-12'>
                             <div className='footer-top-links py-4'>
 
@@ -112,24 +112,27 @@ const Footer = (props) => {
 
 
                     </div>
-                </div>
-            </div>
-            <div className="wpo-lower-footer">
+                     <div className="wpo-lower-footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-xs-12">
+                        <div className="col-lg-5 col-xs-12">
                             <ul className='d-flex align-items-center  gap-2'>
                                 <li><Link onClick={ClickHandler} className='text-white' to="/about">Terms of Service</Link></li>
                                 <li><Link onClick={ClickHandler} className='text-white' to="/case">Privacy Policy</Link></li>
+                                <li><Link onClick={ClickHandler} className='text-white' to="/case">Cookies</Link></li>
+                                <li><Link onClick={ClickHandler} className='text-white' to="/case">Sitemap</Link></li>
 
                             </ul>
                         </div>
-                        <div className="col-lg-6 col-xs-12">
-                            <p className="copyright">&copy; © 2025 ChildrenLeftBehind Inc. is a 501(c)(3) organization. All rights reserved.</p>
+                        <div className="col-lg-7 col-xs-12">
+                            <p className="copyright">&copy; 2025 ChildrenLeftBehind Inc. is a 501(c)(3) organization. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
+                </div>
+            </div>
+           
         </footer>
     )
 }

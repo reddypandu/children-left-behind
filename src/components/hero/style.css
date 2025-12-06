@@ -385,7 +385,7 @@ top:0%;
 }
 
 .slide-caption {
-    z-index: 99;
+    /* z-index: 99; */
     position: relative;
 }
 

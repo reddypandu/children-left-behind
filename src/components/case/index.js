@@ -16,7 +16,7 @@ class CaseSlide extends Component {
     render() {
         var settings = {
             dots: false,
-            arrows: true,
+            arrows: false,
             infinite: true,
             speed: 500,
             slidesToShow: 3,
@@ -66,16 +66,16 @@ class CaseSlide extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="three-boxes">
-                                <p style={{ cssText: "color: #E3C3FF !important;" }}>
+                                <p style={{ cssText: "color: #E3C3FF !important;opacity: 0.5;" }}>
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                 </p>
-                                <p style={{ cssText: "color: #E3C3FF !important;" }}>
+                                <p style={{ cssText: "color: #E3C3FF !important;opacity: 0.5;" }}>
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                 </p>
-                                <p style={{ cssText: "color: #E3C3FF !important;" }}>
+                                <p style={{ cssText: "color: #E3C3FF !important;opacity: 0.5;" }}>
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                 </p>
-                                <p style={{ cssText: "color: #E3C3FF !important;" }}>
+                                <p style={{ cssText: "color: #E3C3FF !important;opacity: 0.5;" }}>
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 </p>
                             </div>
@@ -87,7 +87,7 @@ class CaseSlide extends Component {
                             <div className="two-column-section">
 
                                 {/* LEFT SIDE */}
-                                <div className="left-text">
+                                <div className="left-text" >
                                     <h2>News and our media presence</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -96,7 +96,7 @@ class CaseSlide extends Component {
                                 </div>
 
                                 {/* RIGHT SIDE */}
-                                <div className="right-text">
+                                <div className="right-text" style={{ cssText: "color: #E3C3FF !important;opacity: 0.5;" }}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                         <br /><br /><br /><br />

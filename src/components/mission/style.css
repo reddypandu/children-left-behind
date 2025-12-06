@@ -1,10 +1,26 @@
 
 
 .wpo-mission-area {
-    background: #f7fbfe;
+    /* background: #f7fbfe; */
     padding-bottom: 64px;
 }
-
+.wpo-mission-area.org .container{
+    position: relative;
+}
+.wpo-mission-area.org .container .org-icon-left{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 600px;
+    z-index: -1;
+}
+.wpo-mission-area.org .container .org-icon-right{
+    position: absolute;
+    bottom: 0px;
+    left: -5%;
+    width: 600px;
+    z-index: -1;
+}
 .wpo-mission-wrap {
     margin-top: 10px;
 }
@@ -21,6 +37,7 @@
 }
 .wpo-mission-wrap .partner-links h3 a {
     color: #1C191E !important;
+    font-weight: 500 !important;
     transition: 0.3s ease;  /* smooth color change */
 }
 
@@ -54,7 +71,13 @@
 .wpo-mission-icon-4 .fi:before {
     background-image: linear-gradient(#fbaddc, #fc7cb8);
 }
-
+.wpo-section-title.orgs h2{
+width: 400px;
+}
+.wpo-section-title.orgs p{
+width: 600px;
+margin: auto;
+}
 
 
 @media(max-width: 992px) {

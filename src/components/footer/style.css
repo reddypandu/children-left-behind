@@ -36,7 +36,7 @@
 
 .wpo-site-footer .wpo-upper-footer,
 .wpo-site-footer-2 .wpo-upper-footer {
-    padding: 0 0 90px;
+    padding: 0 0 20px;
 }
 
 @media (max-width: 991px) {
@@ -350,6 +350,7 @@
 .wpo-site-footer-2 .wpo-lower-footer {
     text-align: center;
     position: relative;
+    border-top:1px solid #E5E7EB ;
     /* background: ; */
 }
 
@@ -363,8 +364,7 @@
 .wpo-site-footer .wpo-lower-footer .copyright,
 .wpo-site-footer-2 .wpo-lower-footer .copyright {
     display: inline-block;
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 15px !important;
     margin: 0;
     color:white !important;
 }

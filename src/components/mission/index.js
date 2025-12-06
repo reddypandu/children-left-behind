@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import img1 from "../../images/about6.png";
 import img2 from "../../images/about4.png";
 import img3 from "../../images/about5.png";
+import img4 from "../../images/icons/org-layer1.png";
+import img5 from "../../images/icons/org-layer2.png";
 
 import { Link } from "react-router-dom";
 import "./style.css";
@@ -22,12 +24,14 @@ const Mission = (props) => {
   };
 
   return (
-    <div className={`wpo-mission-area ${props.subclass}`}>
+    <div className={`wpo-mission-area org ${props.subclass}`}>
       <div className="container pt-5 mt-5">
+        <img src={img4} alt="" className='org-icon-left'/>
+                            <img src={img5} alt="" className='org-icon-right'/>
         {/* Section Title */}
         <div className="row">
           <div className="col-12">
-            <div className="wpo-section-title">
+            <div className="wpo-section-title orgs">
               <span
                 style={{
                   fontSize: "16px",
@@ -57,9 +61,9 @@ const Mission = (props) => {
 
         {/* Main Content */}
         <div className="wpo-mission-wrap">
-          <div className="row align-items-center">
+          <div className="row align-items-center justify-content-center">
             {/* LEFT SIDE - Partner Links */}
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div className="partner-links">
                 <h3>
                   <Link to="/childcenter">Child Guidance Center</Link>
@@ -79,7 +83,7 @@ const Mission = (props) => {
             </div>
 
             {/* RIGHT SIDE - Image Carousel */}
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <Slider {...settings}>
                 <div>
                   <img style={{ borderRadius: "12px" }} src={img1} className="carousel-img w-100" alt="" />

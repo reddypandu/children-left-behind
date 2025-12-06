@@ -164,10 +164,11 @@
 
 .wpo-header-style-2 .topbar .theme-btn,
 .header-style-3 .topbar .theme-btn {
-    padding: 12px 20px;
+    padding: 10px 16px;
     margin-top: 9px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 16px;
     background: #832AD1;;
     color: #fff !important;
 }

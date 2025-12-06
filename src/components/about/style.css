@@ -14,30 +14,27 @@
 }
 
 .wpo-about-area .icon-left{
-    top:-11%;
+    top:-13%;
 left: 0;
 width: 200px;
 }
 .wpo-about-area .icon-right{
-     top:-20%;
+     top:-16%;
 right: 0;
 width: 500px;
 }
 @media(max-width:992px){
     .wpo-about-area .icon-left{
-    top:-2%;
-left: 0;
-width:150px;
+   display: none;
 }
 .wpo-about-area .icon-right{
-     top:-4%;
-right: 0;
-width:400px;
+  display: none;
 }
 }
 .wpo-about-text p,
 .wpo-about-text-2 p {
     margin-bottom: 15px;
+    font-size:16px !important;
 }
 
 .wpo-about-text {
@@ -104,7 +101,9 @@ align-items: center;
     position: relative;
     left: -200px;
 }
-
+.icons h2{
+    
+}
 @media(max-width: 1200px) {
     .wpo-about-img-2 {
         width: 122%;

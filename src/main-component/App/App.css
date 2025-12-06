@@ -264,12 +264,19 @@ img {
 }
 
 .wpo-section-title h2 {
-  font-size: 36px;
-  font-weight: 700;
+font-size: 36px !important;
+    font-weight: 600 !important;
+    line-height: 44px !important;
+    letter-spacing: 2px;
   margin: 0;
   display: inline-block;
   position: relative;
-  line-height: 50px;
+}
+.wpo-section-title h3{
+  font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 40px !important;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 991px) {
@@ -296,12 +303,14 @@ img {
   background-color: #F8F0FF;
   color: #832AD1;
   border: 1px solid #91278f !important;
-  font-weight: 700;
-  padding: 13px 38px;
+  font-weight: 500;
+  padding: 10px 16px;
   border-radius: 8px;
   display: inline-block;
   transition: all .3s;
   border: none;
+  font-size:14px;
+  line-height: 16px;
 }
 
 @media (max-width: 991px) {

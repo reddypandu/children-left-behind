@@ -96,7 +96,7 @@ nav ul li.closed > ul {
             <div className="col-lg-12 d-lg-block d-none">
 
               <nav className='row'>
-                <ul className="col-lg-9">
+                <ul className="col-lg-9 p-0">
 
                   <li><Link to="/about">About Us</Link></li>
 
@@ -128,7 +128,7 @@ nav ul li.closed > ul {
 
                 </ul>
 
-                <ul className="col-lg-3">
+                <ul className="col-lg-3 p-0">
                   <li><Link to="/resources">Resources</Link></li>
                   <li><Link to="/faq">F.A.Q</Link></li>
                   <li><Link to="/">Subscribe</Link></li>
