@@ -23,6 +23,7 @@ class TiltCarousel extends Component {
       autoplay: true,
       margin: 10,
       loop: true,
+      centerMode: true,
       responsive: [
         {
           breakpoint: 1200,
@@ -73,7 +74,7 @@ class TiltCarousel extends Component {
 
           <div>
             <div className="tilt-card rotate-3">
-              <img style={{height:'370px'}} src={Img3} alt="" />
+              <img  src={Img3} alt="" />
             </div>
           </div>
 
