@@ -101,7 +101,7 @@ nav ul li.closed > ul {
                   <li><Link to="/about">About Us</Link></li>
 
                   <li>
-                    <Link to="/" className='drop-downn'>Our Programs</Link>
+                    <Link to="/disability" className='drop-downn'>Our Programs</Link>
                     <ul>
                       <li><Link to="/disability">Supporting Disability</Link></li>
                       <li><Link to="/education">Education</Link></li>

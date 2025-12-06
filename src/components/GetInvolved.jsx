@@ -302,7 +302,27 @@ function GetInvolved() {
             support makes to a child and their family cannot be overstated. Individuals
             and companies can help children by supporting or partnering with Children
             Left Behind.
-          </p>
+          </p><br/><br/>
+           <h2
+            style={{
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "40px",
+              letterSpacing: "2%",
+            }}
+            className="sub-title"
+          >
+            Helping a Child
+          </h2><br/>
+           <h3 className="corporate-des">
+            We are seeing how the promise and hope for a better future through
+            education is becoming a reality as we work with at-risk children in the
+            United States and developing world nations. We believe in the value of
+            education to “open doors” for a new way of life for children and youth
+            all around the globe.
+            <br /></h3>
+
+         
 
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img src={img} alt="banner" style={{ width: "100%" }} />
