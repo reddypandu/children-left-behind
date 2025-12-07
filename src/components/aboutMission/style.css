@@ -30,8 +30,9 @@ margin-top: 40px;
 }
 .ourm .col-lg-3 div{
     border-radius: 8px;
-     border: 2px solid #A354E8;
+     border: 1px solid #A354E8;
       padding:12px;
+     
 }
 .ourm .wpo-mission-wrap .row{
     /* gap: 6px; */
