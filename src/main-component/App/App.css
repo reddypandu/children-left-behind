@@ -514,10 +514,8 @@ h2 {
 .program-hero {
   width: 1150px;
   height: 370px;
-  background: #F8F0FF;
-  /* border: 5px solid #E5D1FF; */
+ background: linear-gradient(to bottom, #FFFFFF, #F8F0FF);
   border-radius: 10px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;

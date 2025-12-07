@@ -50,12 +50,12 @@ function Disability() {
 
             <div className="program-hero">
 
-                {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
+              
                 <div className="program-image-box">
                     <img src={img1} alt="hero" className="program-image" />
                 </div>
 
-                {/* LEFT CONTENT on Desktop — BELOW on Mobile */}
+              
                 <div className="program-content">
                     <h1 className="program-title">
                         Aims to bridge the <br />
