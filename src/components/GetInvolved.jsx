@@ -22,6 +22,7 @@ import w3 from "../images/icons/Marketing.svg"
 import v1 from "../images/icons/email.svg";
 import v2 from "../images/icons/mic.png";
 import v3 from "../images/icons/host.svg"
+import kite from "../images/icons/Union.svg"
 
 function GetInvolved() {
   const navigate = useNavigate();
@@ -546,9 +547,9 @@ function GetInvolved() {
           <p>Gifts and services in-kind are a vital element in enabling Children Left Behind to meet its vision and mission. Gifts of auction and raffle prizes for events, business skills such as legal or accountancy advice or technology and office items are all necessary to successfully deliver Children Left Behind’s vision and mission</p><br />
           <p>By making charitable bequests or other “planned gifts,” you can leave an important legacy of caring that endures. Many people choose to leave a charity in their will because they want to support important causes. There are many of advantages to making a legacy gift to the Children Left Behind. Your gift will provide a child in need with food, a home, healthcare, education and a chance to succeed that would not be available to them with our your gift. While your gift may be measured in dollars, your impact on a child’s life is priceless. All gifts are tax deductible</p>
           <p>Different gifts may benefit you in different ways. Find the perfect charitable bequest plan that meets your financial needs and fulfills your charitable interests:</p>
-          <li>Gifts Through Your Will – Remembering the Children Left Behind in your will can help you reduce estate taxes and ensure the work you care about will always continue.</li><br />
-          <li>Gifts Outside Your Will – Help our mission even faster by making a gift that avoids probate. Just name the Children Left Behind as beneficiary on appreciated securities, retirement plans, insurance policies or real estate</li><br />
-          <li>Gifts Now – Save on your current income taxes, and possibly reduce or eliminate estate tax and probate expenses when you make a gift to the Children Left Behind today.</li><br /><br />
+          <p><li>Gifts Through Your Will – Remembering the Children Left Behind in your will can help you reduce estate taxes and ensure the work you care about will always continue.</li></p>
+          <p><li>Gifts Outside Your Will – Help our mission even faster by making a gift that avoids probate. Just name the Children Left Behind as beneficiary on appreciated securities, retirement plans, insurance policies or real estate</li></p>
+          <p><li>Gifts Now – Save on your current income taxes, and possibly reduce or eliminate estate tax and probate expenses when you make a gift to the Children Left Behind today.</li></p><br /><br />
           <h2
             style={{
               fontWeight: "600",
@@ -705,10 +706,10 @@ function GetInvolved() {
           </div><br />
 
 
-
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img src={img} alt="banner" style={{ width: "100%" }} />
+            <img src={kite} />
           </div>
+
         </div>
 
         <CtaSection ctaclass={"wpo-cta-area-2"} />
