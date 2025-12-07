@@ -6,7 +6,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    min-height: 150px; /* same height for all */
 }
 .about-section-2 .wpo-mission-content p{
       /* display: -webkit-box;
@@ -14,11 +13,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden; */
 }
-.ourm{
+.ourm .container{
+    background: url(../../images/world-map.png) no-repeat center center;
 }
 .ourm .col-lg-3 div{
-width: 260px;
-height: 100px;
+/* width: 260px; */
+height: 120px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -41,4 +41,10 @@ margin-top: 40px;
 }
 .wpo-mission-area{
     /* margin-top: 4rem; */
+}
+@media (max-width: 768px) {
+    .ourm .col-lg-3 div{
+        height: auto;
+    }
+    
 }
