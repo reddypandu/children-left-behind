@@ -6,7 +6,7 @@ import "./style.css";
 
 const TeamSection = () => {
     return (
-        <div className="container py-5 leader">
+        <div className="container leadership py-5 leader">
             {/* Section Title */}
             <div className="text-center mb-5">
                 <p className="text-uppercase small fw-bold whoweare">Who We Are</p>
@@ -14,7 +14,7 @@ const TeamSection = () => {
             </div>
 
             {/* Card Container */}
-            <div style={{backgroundColor:'#F8F0FF',   borderRadius: "8px",}}  className=" p-4 p-md-5 rounded-4 shadow-sm">
+            <div  style={{backgroundColor:'#F8F0FF',   borderRadius: "8px",}}  className=" p-4 p-md-5 rounded-4 shadow-sm ship-content">
 
                 {/* Member 1 */}
                 <div className="text-center mb-5">
@@ -41,7 +41,6 @@ const TeamSection = () => {
                     </p>
                 </div>
 
-                <hr />
 
                 {/* Member 2 */}
                 <div className="text-center my-5">
@@ -67,7 +66,6 @@ const TeamSection = () => {
                     </p>
                 </div>
 
-                <hr />
 
                 {/* Member 3 */}
                 <div className="text-center my-5">
@@ -144,8 +142,9 @@ const TeamSection = () => {
       maxWidth: "792px",      // Limit max width on large screens
       height: "36px",
       borderRadius: "8px",
-      border: "1px solid rgb(104, 23, 174)",
+      border: "1px solid #b66ed6",
       backgroundColor: "#F8F0FF",
+      color: "#b66ed6",
     }}
     className="px-4 py-2"
   >

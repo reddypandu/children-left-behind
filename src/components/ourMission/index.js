@@ -6,7 +6,12 @@ import "./style.css"; // <-- make sure to create this file
 const ourMission = () => {
   return (
     <section className="values-section">
-      <h2 className="mission-title">OUR MISSION</h2><br></br>
+      <div className="wpo-section-title">
+        <span>
+OUR VALUES
+        </span>
+        
+        </div>
 
       <div className="valuestext">
         <h3>

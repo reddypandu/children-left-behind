@@ -14,7 +14,31 @@
     -webkit-box-orient: vertical;
     overflow: hidden; */
 }
-
+.ourm{
+}
+.ourm .col-lg-3 div{
+width: 260px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+margin-top: 40px;
+}
+.ourm .container{
+    max-width: 1200px;
+}
+.ourm .col-lg-3 div{
+    border-radius: 8px;
+     border: 2px solid #A354E8;
+      padding:12px;
+}
+.ourm .wpo-mission-wrap .row{
+    /* gap: 6px; */
+}
+.ourm .col-lg-3 p{
+    margin-bottom: 0;
+}
 .wpo-mission-area{
     /* margin-top: 4rem; */
 }
