@@ -523,40 +523,54 @@ h2 {
   padding: 40px;
   gap: 40px;
   margin: auto;
+    position: relative;
 }
 
 /* IMAGE RIGHT on DESKTOP */
-.program-image-box {
+.program-hero .program-image-box {
   flex: 1;
   order: 2; /* Desktop: image on right */
+
 }
 
-.program-image {
+.program-hero .program-image-box .program-image {
   width: 100%;
   max-width: 500px;
   height: auto;
+  position: absolute;
+  top: 7%;
+  right: -3%;
 }
 
 /* CONTENT LEFT on DESKTOP */
-.program-content {
+.program-hero .program-content {
   flex: 1;
   order: 1; /* Desktop: content on left */
 }
 
-.program-title {
+.program-hero .program-title {
   font-size: 42px;
   line-height: 48px;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.program-desc {
+.program-hero .program-desc {
   font-size: 17px;
   line-height: 26px;
   color: #444;
   margin-bottom: 20px;
 }
+@media(max-width:992px){
+  .program-hero{
+    position: unset;
+  }
 
+.program-hero .program-image-box .program-image{
+  position: unset;
+  order: 1;
+}
+}
 .program-btn {
   background: #7A3CFF;
   color: white;

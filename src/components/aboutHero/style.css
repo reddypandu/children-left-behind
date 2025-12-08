@@ -1,39 +1,84 @@
-.wpo-section-title.about{
-    text-align:left;
-    margin: 0;
-    margin-bottom: 20px;
+/* OUTER SECTION */
+.about-hero-section {
+  padding: 140px 0;
+  
+  position: relative;
+  overflow: visible;
 }
-.ourmissionn{
-     background: linear-gradient(180deg, #FFFFFF 0%, #FAF0FF 100%);
-}
-.about-page-hero{
-    padding: 170px 0;
-}
-.about-page-hero .container{
-    position: relative;
-}
-.about-page-hero .container .img{
-    position: absolute;
-    right: -10%;
-}
-@media(max-width:992px){
-    .about-page-hero{
-        padding-top: 250px;
-        padding-bottom: 0;
-    }
-    .about-page-hero .container .img{
-/* position: static; */
-bottom: 0%;
 
+/* FLEX BOX CONTAINER */
+.about-hero-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #faf0ff 100%);
 }
+
+/* LEFT TEXT AREA */
+.about-text {
+  width: 50%;
+  z-index: 3;
 }
-@media(max-width:768px){
-    .about-page-hero{
-        padding-top: 350px;
-        padding-bottom: 0;
-    }
-    .about-page-hero .container .img{
-/* position: static; */
-top: -100%;
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
+
+.about-text p {
+  max-width: 430px;
+  font-size: 16px;
+  color: #444;
+  line-height: 26px;
+}
+
+/* IMAGE — FLOATING OUTSIDE */
+.about-hero-img {
+  width: 50%;
+  position: absolute;
+  right: -12%;   /* ⬅ pushes image OUTSIDE the container */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.about-hero-img img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ---------------- MOBILE FIXES ---------------- */
+@media (max-width: 992px) {
+  .about-hero-section {
+    padding-top: 220px;
+    padding-bottom: 40px;
+  }
+
+  .about-hero-img {
+    position: absolute;
+    top: -230px;       /* Image moves ABOVE the text */
+    right: 50%;
+    transform: translateX(50%);
+    width: 70%;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero-img {
+    top: -140px;
+    width: 85%;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
 }
