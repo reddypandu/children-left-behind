@@ -45,7 +45,7 @@ function Disability() {
         <>
 
 
-            <div className="program-hero">
+            <div className="program-hero container">
 
 
                 <div className="program-image-box">

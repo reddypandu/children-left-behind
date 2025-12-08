@@ -41,7 +41,7 @@ function ChildTrafficking() {
   return (
     <>
       {/* 🌟 HERO SECTION */}
-      <div className="program-hero">
+      <div className="program-hero container">
         {/* RIGHT IMAGE on Desktop — FIRST on Mobile */}
         <div className="program-image-box">
           <img src={img1} alt="hero" className="program-image" />

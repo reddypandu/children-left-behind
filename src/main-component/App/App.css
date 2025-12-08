@@ -512,8 +512,8 @@ h2 {
 
 
 .program-hero {
-  width: 1150px;
-  height: 370px;
+  /* width: 1150px;
+  height: 370px; */
  background: linear-gradient(to bottom, #FFFFFF, #F8F0FF);
   border-radius: 10px;
   display: flex;
@@ -521,25 +521,25 @@ h2 {
   justify-content: space-between;
 
   padding: 40px;
+  padding-top:4rem;
   gap: 40px;
   margin: auto;
-    position: relative;
+    /* position: relative; */
 }
 
 /* IMAGE RIGHT on DESKTOP */
 .program-hero .program-image-box {
   flex: 1;
   order: 2; /* Desktop: image on right */
-
+margin-right: -150px;
+margin-bottom: -100px;
 }
 
 .program-hero .program-image-box .program-image {
   width: 100%;
   max-width: 500px;
   height: auto;
-  position: absolute;
-  top: 7%;
-  right: -3%;
+
 }
 
 /* CONTENT LEFT on DESKTOP */
@@ -562,14 +562,11 @@ h2 {
   margin-bottom: 20px;
 }
 @media(max-width:992px){
-  .program-hero{
-    position: unset;
-  }
-
-.program-hero .program-image-box .program-image{
-  position: unset;
+ .program-hero .program-image-box {
   order: 1;
-}
+  margin-right: 0px;
+margin-bottom: 0px;
+ }
 }
 .program-btn {
   background: #7A3CFF;
